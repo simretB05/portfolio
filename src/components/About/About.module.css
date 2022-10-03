@@ -1,0 +1,209 @@
+/***********************
+* COLORS
+************************/
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Passions Conflict";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/passionsconflict/v5/kmKnZrcrFhfafnWX9x0GuEC-zowow6NXaxMICA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/*******************
+* MEDIA QUERIES
+********************/
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Passions Conflict";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/passionsconflict/v5/kmKnZrcrFhfafnWX9x0GuEC-zowow6NXaxMICA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh";
+}
+
+.content {
+  padding: 5rem 0 0 0;
+  min-height: 100%;
+}
+
+.main {
+  padding: 1rem;
+  background-color: hsl(0deg, 0%, 85.1%);
+}
+.main__container {
+  color: hsl(0deg, 0%, 85.1%);
+  font-family: "Kumbh Sans";
+  width: 100%;
+  margin: 0 auto;
+}
+.main__container__btnCard {
+  width: 90%;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main__container__btnCard__btn {
+  color: #2f2f2f;
+  background-color: hsl(7deg, 99%, 70%);
+  padding: 0.91rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.main__container__btnCard__btn:hover {
+  background-color: #2f2f2f;
+  color: hsl(0deg, 0%, 85.1%);
+  font-weight: 900;
+}
+.main__container__signture {
+  font-family: "Passions Conflict";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+.main__container__signture__text {
+  font-family: "Passions Conflict";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: hsl(7deg, 99%, 70%);
+  font-weight: 100;
+  padding-left: 2rem;
+}
+.main__container__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__container__card__title {
+  font-size: 4rem;
+  color: #2f2f2f;
+  text-align: center;
+  margin: 0 auto;
+}
+.main__container__card__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__container__card__content__body {
+  letter-spacing: 0.0112rem;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 1rem;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__iconLinks {
+    width: 8rem;
+  }
+}
+.footer__iconLinks__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .footer__iconLinks__list {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.footer__iconLinks__list__item {
+  letter-spacing: 0.04rem;
+}
+.footer__iconLinks__list__item:hover {
+  color: #0e0e0e;
+}
+@media screen and (min-width: 768px) {
+  .footer__iconLinks__list__item {
+    padding: 0.5rem 0;
+  }
+}
+.footer__iconLinks__list__facebookIcon {
+  width: 40px;
+  height: 17px;
+}
+.footer__iconLinks__list__twitter {
+  width: 40px;
+  height: 17px;
+}
+.footer__iconLinks__list__instagramIcon {
+  width: 40px;
+  height: 17px;
+}/*# sourceMappingURL=About.module.css.map */

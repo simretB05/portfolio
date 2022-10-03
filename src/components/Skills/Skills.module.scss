@@ -1,0 +1,131 @@
+@import "../../styles/styles.scss";
+
+.main{
+    padding: $p-base;
+    background-color:$c-bright-gray;
+    &__container{
+        color: $c-sim-black;
+        @include font-family-normal;
+         width: 100%;
+        margin: 0 auto;
+    &__card{
+        width: 90%;
+        @include flex-center;
+        flex-direction: column;
+        margin: 0 auto;
+        &__title{
+        font-size: 1.7rem;
+        color: $c-sim-black;
+        text-align: center;
+       padding: 2rem;
+        text-transform:capitalize;
+        
+        }
+    
+    }
+    &__bodyCard{
+        margin-bottom: 5rem;
+        &__body{
+            letter-spacing: 0.0112rem;
+            line-height: 26px;
+            font-size: 15px;
+            font-size: 0.91rem;
+            font-weight:$fw-normal;
+            color:$c-sim-black;
+        }
+    }
+    &__content{
+    width: 90%;
+    height: 90%;
+    
+    &__card{
+        margin: $m-base;
+        width: 100%;
+        height: 300px;
+        border: 1px solid $c-soft-red;
+    }
+    
+    }
+}
+}
+.service__container{
+    max-width: 56.25em;
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet-query{
+       max-width: 100%;
+       margin: 0 auto;
+
+    }
+    @include laptop-query{
+        max-width: 100%;
+        height: 500px;
+        flex-wrap: nowrap;
+    }
+  }
+  
+  .service__card{
+    width: 100%;
+    padding: 0;
+    display: flex;
+   @include flex-center;
+    flex: 0 0 100%;
+    height: 8rem;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    background-color: $c-bright-gray;
+    border-radius: .5rem;
+    // transform: scale(.9);//later
+    @include tablet-query{
+        flex: 0 0 48%;
+        padding: 0 1rem;
+        height: 15rem;
+        margin: 1rem auto 1rem;
+    }
+    @include laptop-query{
+      flex: 0 0 24%;
+      padding: 0 1rem;
+      height: 15rem;
+      margin: 1rem auto 1rem;
+  }
+  @include laptop-l-query{
+    flex: 0 0 24%;
+    padding: 0 1rem;
+    height: 15rem;
+    margin: 1rem auto 1rem;
+    &:nth-child(2){
+      transform:translateY(50px);
+  }
+  &:nth-child(3){
+      transform:translateY(100px);
+  }
+  &:nth-child(4){
+    transform:translateY(150px);
+  }
+  }
+    }
+  .FontAwesomeIcon{
+    color: $c-soft-red;
+    padding: $p-base
+  }
+  .service__card__container{
+    @include flex-start;
+    flex-direction: column;
+  }
+  .service__card__container__title{
+    @include font-family-normal;
+    text-transform:capitalize;
+    color:$c-sim-black;
+    text-align: center;
+  }
+  .service__card__container__body{
+    @include font-family-normal;
+    width: 100%;
+    letter-spacing: 0.0112rem;
+    line-height: 26px;
+    font-size: 15px;
+    font-size: 0.91rem;
+    font-weight: 300;
+    color: #2f2f2f;
+
+  }

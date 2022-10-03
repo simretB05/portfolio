@@ -1,0 +1,113 @@
+@import "../../styles/styles.scss";
+
+.main{
+    padding: $p-base;
+    background-color: $c-bright-gray;
+    &__container{
+        color: $c-bright-gray;
+        @include font-family-normal;
+        width: 100%;
+        margin: 0 auto;
+        &__btnCard{
+            width: 90%;
+            padding-top:$p-base*2 ;
+            @include flex-center;
+            flex-direction: column;
+            margin: 0 auto;
+            &__btn{
+            color: $c-sim-black;
+            background-color: $c-soft-red;
+            padding: .91rem;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            text-transform: uppercase;
+            &:hover{
+            background-color: $c-sim-black;
+            color: $c-bright-gray;
+            font-weight: $fw-black;
+            }
+            }
+        }
+        &__signture{
+            @include font-family-passion;
+            padding: 0;
+            margin: 0;
+            &__text{
+                @include font-family-passion;
+                padding: 0;
+                margin: 0;
+                color:$c-soft-red;
+                font-weight:100;
+                padding-left: $p-base*2;
+            }
+        }
+        &__card{
+            @include flex-center;
+            flex-direction: column;
+            &__title{
+                font-size: 4rem;
+                color:$c-sim-black;
+                text-align: center;
+                margin: 0 auto;
+            }
+            &__content{
+            @include flex-center;
+            flex-direction: column;
+            &__body{
+                letter-spacing: .0112rem;
+                line-height: 30px;
+                font-size:15px;
+                padding: $p-base;
+                font-size: 0.91rem;
+                font-weight:$fw-normal;
+                color:$c-sim-black;
+            }
+        }
+     }
+}
+}
+.footer__iconLinks{
+    @include tablet-query{
+    width:8rem;
+    }
+    &__list{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        @include flex-end;
+        @include tablet-query{
+            flex-direction: row;
+            @include flex-end;
+        }
+        &__item{
+            letter-spacing: .04rem;
+            &:hover{
+                color: $c-banana-sim-black;
+            }
+          @include tablet-query{
+            padding:$p-base*.5 0;
+
+            
+            }
+         }
+         &__facebookIcon{
+          width: 40px;
+          height: 17px;
+         }
+         &__twitter{
+          width: 40px;
+          height: 17px;
+         }
+         &__instagramIcon{
+          width: 40px;
+          height: 17px;
+         }
+    }
+}
+
+
+
+
+
