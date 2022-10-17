@@ -1,0 +1,59 @@
+@import "../../styles/styles.scss";
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+
+    &__card{
+        width: 100%;
+        grid-template-columns: auto;
+        align-items: center;
+        position: relative;
+        display: grid;
+        gap: 20px;
+        position: relative;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        
+        &__item{
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+          
+            &__img{
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+                transition: 0.4s ease-in-out all;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            &__details{
+                position: absolute;
+                padding: 10px 5px;
+                bottom: 0px;
+                opacity: 0;
+                transition: 0.4s ease-in-out all;
+              
+                &__title{
+                    font-size: 18px;
+                    margin: 2px 0;
+                }
+                &__text{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.container__card__item:hover .container__card__item__details{
+      opacity: 1;
+    bottom: 10px;
+    
+}

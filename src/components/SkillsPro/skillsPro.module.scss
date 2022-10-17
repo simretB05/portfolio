@@ -1,0 +1,37 @@
+@import "../../styles/styles.scss";
+.skillsGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: auto;
+  height: auto;
+  padding: 1rem;
+
+}
+.skillsGrid img {
+height: 35px;
+width: 35px;
+}
+.skills{
+background-color:rgb(219 210 210);
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.skills__dark{
+background-color:hsl(212deg 47% 20%);
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+justify-content: center;
+align-items: center;
+border-radius: 4%;
+
+}

@@ -1,29 +1,33 @@
-import React from 'react';
+import React from "react";
+import classes from "../Hero/hero.module.scss"
+import hero from "../images/hero.jpg"
+import { useTheme } from "../ThemeContext"
 import {Link} from 'react-router-dom';
-import classes from '../contact/contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { useTheme, } from "../ThemeContext"
 import AddressImag from "../images/profileImg3.jpg"
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
+function Hero() {
+  const isDarkTheme = useTheme();
 
-
-function Contact() {
-    const isDarkTheme = useTheme();
-
-    return (
-        <div id='contact' className={ isDarkTheme?classes.content__dark: classes.content}>
-
-            <div  className={isDarkTheme? classes.form__container__dark:classes.form__container}>
-                <h1 className={isDarkTheme ?classes.form__container__dark__title:classes.form__container__title}>Contact</h1>
-                <p className={isDarkTheme? classes.form__container__dark__copy:classes.form__container__copy}>we are here for any of your question,suggestion or request  you have about our company and products!</p>
-                <div className={isDarkTheme?classes.address__dark:classes.address}>
-                        <h3 className={isDarkTheme? classes.address__dark__title:classes.address__title}>Let's Connect</h3>
-                        <ul className={classes.address__list}>
+  return (
+    <div id="home" className={isDarkTheme ?classes.content__dark: classes.content}>
+            <div className={classes.hero}>
+              <div  className={isDarkTheme ? classes.hero__divider1__dark:classes.hero__divider1}></div>
+      
+          <img className={isDarkTheme ?classes.hero__divider__dark__img: classes.hero__divider__img} src={hero} alt="hero img" />
+            
+      
+            <div className= {isDarkTheme ? classes.hero__divider3__dark:classes.hero__divider3}>
+                <h1 className={isDarkTheme ?classes.hero__divider3__dark__title:classes.hero__divider3__title}>Hi,my name is Simret Paulos</h1>
+                <h3 className={isDarkTheme ?classes.hero__divider3__dark__text:classes.hero__divider3__text} >Aspiring Front End Web Developer.</h3>
+            </div>
+        <div className={isDarkTheme ? classes.hero__divider2__drak : classes.hero__divider2}>
+        <ul className={classes.address__list}>
                             <li className={classes.address__list__item}>
                                 <div className={isDarkTheme? classes.address__dark__list__item__icon:classes.address__list__item__icon}>
                                     <FontAwesomeIcon className={classes.FontAwesomeIcon} icon={faLocationArrow} />
@@ -61,30 +65,10 @@ function Contact() {
                                 </div>
                             </li>
                          </ul>
-                    </div>
-                <div className={isDarkTheme? classes.form__container__dark__mainContent:classes.form__container__dark__mainContent}>
-                    <form className={isDarkTheme? classes.form__dark:classes.form}>
-                        <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
-                            <input className={isDarkTheme? classes.form__dark__input__text:classes.form__input__text} type="text" required placeholder="Your name" />
-                        </div>
-                        <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
-                            <input className={ isDarkTheme?classes.form__dark__input__text:classes.form__input__text} type="text" required placeholder="E-mail" />
-                        </div>
-                        <div className={isDarkTheme? classes.form__dark__message__box:classes.form__message__box}>
-                            <textarea className={isDarkTheme? classes.form__dark__input__textArea:classes.form__input__textArea} placeholder=" Your Message" name="textarea" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
-                            <input className={isDarkTheme? classes.form__dark__submit__btn:classes.form__submit__btn} type="submit" value="Send Message" />
-                        </div>
-                    </form>
-                    <div className={classes.adress__profile}>
-                    <img className={classes.adress__profile__img} src={AddressImag} alt="address image" />
-                </div>
-                </div>
-
-            </div>
         </div>
-    )
+          </div>
+    </div>
+  )
+}
 
-};
-export default Contact;
+export default Hero
