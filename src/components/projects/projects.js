@@ -9,6 +9,14 @@ import { faHtml5, faJs, faReact, faHtml3 } from '@fortawesome/free-brands-svg-ic
 import {useTheme} from  "../ThemeContext"
 
 import Project1 from '../images/bandsite22.jpg'; 
+import Project2 from '../images/essentialOil.jpg'; 
+import Project3 from '../images/essentialoilReact.jpg'; 
+import Project4 from '../images/bookmark.jpg'; 
+import Project5 from '../images/UrlShortning.jpg'; 
+
+
+
+
 
 
 import classes from "../projects/projects.module.scss";
@@ -29,14 +37,28 @@ function Projects() {
                     </div>
                   </div>
                 <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project1 } alt="bandsite__img" />
+                    <img className={classes.container__card__item__img} src={Project2 } alt="bandsite__img" />
                     <div className={classes.container__card__item__details}>
                         <h1 className={classes.container__card__item__details__title}>Card 1</h1>
                         <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                   </div>
                 <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project1 } alt="bandsite__img" />
+                    <img className={classes.container__card__item__img} src={Project3 } alt="bandsite__img" />
+                    <div className={classes.container__card__item__details}>
+                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
+                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                <div className={classes.container__card__item}>
+                    <img className={classes.container__card__item__img} src={Project4 } alt="bandsite__img" />
+                    <div className={classes.container__card__item__details}>
+                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
+                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                  <div className={classes.container__card__item}>
+                    <img className={classes.container__card__item__img} src={Project5} alt="bandsite__img" />
                     <div className={classes.container__card__item__details}>
                         <h1 className={classes.container__card__item__details__title}>Card 1</h1>
                         <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
@@ -48,4 +70,5 @@ function Projects() {
        
 )
 }
- giexport default Projects;
+
+export default Projects;

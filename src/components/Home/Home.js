@@ -71,7 +71,6 @@ function Home() {
     
 
           </header>
-              <Hero />
     </>
     );
 }
