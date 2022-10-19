@@ -86,4 +86,217 @@ body {
   padding: 5rem 0 0 0;
   min-height: 100%;
   background-color: #0e0e0e;
+}
+
+.container {
+  font-family: "Kumbh Sans";
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 96.86%);
+  height: 100%;
+}
+@media screen and (min-width: 1020px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container__title {
+  font-size: 2.7rem;
+  color: hsl(265.71deg, 36.21%, 45.49%);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin: 2rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .container__title {
+    font-size: 2.7rem;
+  }
+}
+.container__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container__card__item {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 8px solid hsl(0deg, 0%, 100%);
+  position: relative;
+  margin: 1rem;
+}
+.container__card__item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.container__card__item__details {
+  font-family: "Kumbh Sans";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(31, 61, 71, 0.2196078431);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px;
+  flex-direction: column;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+.container__card__item__details__title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.7rem;
+}
+.container__card__item__details__text {
+  font-weight: 300;
+  background-color: hsl(210deg, 4%, 67%);
+  line-height: 26px;
+  letter-spacing: 0.0112rem;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 1rem;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: #2f2f2f;
+}
+.container__card__item__details__btn {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(265.71deg, 36.21%, 45.49%);
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.container__card__item:hover .container__card__item__details {
+  right: 0;
+}
+
+.container__dark {
+  font-family: "Kumbh Sans";
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #0e0e0e;
+  height: 100%;
+}
+@media screen and (min-width: 1020px) {
+  .container__dark {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container__dark__title {
+  font-size: 2.7rem;
+  color: hsl(265.71deg, 36.21%, 45.49%);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .container__dark__title {
+    font-size: 2.7rem;
+  }
+}
+.container__dark__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container__dark__card__item {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 8px solid #0e0e0e;
+  position: relative;
+}
+.container__dark__card__item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.container__dark__card__item__details {
+  font-family: "Kumbh Sans";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(31, 61, 71, 0.2196078431);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px;
+  flex-direction: column;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 1rem;
+}
+.container__dark__card__item__details__title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.7rem;
+}
+.container__dark__card__item__details__text {
+  font-weight: 300;
+  background-color: hsl(210deg, 4%, 67%);
+  line-height: 26px;
+  letter-spacing: 0.0112rem;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 1rem;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: #2f2f2f;
+}
+.container__dark__card__item__details__btn {
+  color: #1f3d47;
+  background: #5adf7d;
+  color: hsl(0deg, 0%, 100%);
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.container__dark__card__item:hover .container__dark__card__item__details {
+  right: 0;
 }/*# sourceMappingURL=projects.module.css.map */

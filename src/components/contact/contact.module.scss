@@ -3,8 +3,8 @@
 
 .form__container{
   @include font-family-normal;
-  // padding: $p-base*2 0;
-  background-color: $c-light-gray-back;
+  background-color: $c-white;
+  height: 100%;
   @include laptop-query{
   width: 100%;
   margin: 0 auto;
@@ -18,7 +18,7 @@
       color: $c-dark-green;
       width: 80%;
       margin: 0 auto;
-      padding: 1rem;
+      
       @include laptop-query{
           margin: 0 auto ;
           font-size: 3rem;
@@ -52,9 +52,7 @@
 
 .form__container__dark{
   @include font-family-normal;
-  // padding: $p-base*2 0;
-  background-color: $c-banana-sim-black;
-
+   background-color:#191919;
   @include laptop-query{
   width: 100%;
   margin: 0 auto;
@@ -68,6 +66,7 @@
       color: $c-white;
       width: 80%;
       margin: 0 auto;
+      padding: $p-base*2 0;
       @include laptop-query{
           margin: 0 auto ;
       }
@@ -153,6 +152,8 @@ background-color: #c4c4c4;
     margin: 0 auto;
     margin: 0 auto;
     padding: $p-base;
+    height: 100%;
+
 @include laptop-query{
 
 
@@ -164,7 +165,7 @@ background-color: #c4c4c4;
     &__input__text{
         width: 100%;
         padding: $p-base*.8;
-        background-color: #1c1a1c;
+        background-color: #9d9b9d;
         border: none;
         color: $c-light-body;
     }
@@ -175,7 +176,7 @@ background-color: #c4c4c4;
     }
   &__input__textArea{
     padding: $p-base*.8;
-    background-color: #1c1a1c;
+    background-color: #9d9b9d;
     border: none;
     resize: none;
     outline: none;

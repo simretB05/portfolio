@@ -10,9 +10,11 @@ import {useTheme} from  "../ThemeContext"
 
 import Project1 from '../images/bandsite22.jpg'; 
 import Project2 from '../images/essentialOil.jpg'; 
-import Project3 from '../images/essentialoilReact.jpg'; 
+import Project3 from  '../images/UrlShortning.jpg';
 import Project4 from '../images/bookmark.jpg'; 
-import Project5 from '../images/UrlShortning.jpg'; 
+import Project5 from  '../images/essentialoilReact.jpg';
+import Project6 from '../images/sneakerCompany.jpg' 
+
 
 
 
@@ -24,44 +26,57 @@ import SkillsComponent from '../SkillsPro/skillsComponent';
 
 function Projects() {
   const isDarkTheme = useTheme();
-
   return (
-    <div  id="projects" className={classes.content}>
-        <div className={classes.container}>
-            <div className={classes.container__card}>
-                <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project1 } alt="bandsite__img" />
-                    <div className={classes.container__card__item__details}>
-                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
-                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+    <div  id="projects" className={isDarkTheme ? classes.content__dark:classes.content}>
+          <div className={isDarkTheme ?classes.container__dark:classes.container}>
+                <h1 className={isDarkTheme ? classes.container__dark__title:classes.container__title}> Projects</h1>
+            <div className={isDarkTheme ?classes.container__dark__card:classes.container__card}>
+                <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project1 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 1</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>this is a music band project i did for an assignment for a bootcamp. I used react and the project involves adding concert tikets and deleting them plus adding a comment on the reviwe section</p>
+                        <a href="https://634ef0c92b0ded17e0ef78d4--sunny-bonbon-17baef.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                    </div>
+                </div>
+                <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project2 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 2</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                    </div>
+                </div>
+                <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project3 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 3</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                    </div>
+                </div>
+                <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project4 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 4</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                    </div>
+                </div>
+                <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project5 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 5</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                   </div>
-                <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project2 } alt="bandsite__img" />
-                    <div className={classes.container__card__item__details}>
-                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
-                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                  </div>
-                <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project3 } alt="bandsite__img" />
-                    <div className={classes.container__card__item__details}>
-                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
-                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                  </div>
-                <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project4 } alt="bandsite__img" />
-                    <div className={classes.container__card__item__details}>
-                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
-                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                  </div>
-                  <div className={classes.container__card__item}>
-                    <img className={classes.container__card__item__img} src={Project5} alt="bandsite__img" />
-                    <div className={classes.container__card__item__details}>
-                        <h1 className={classes.container__card__item__details__title}>Card 1</h1>
-                        <p className={classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                  <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
+                    <img className={isDarkTheme ? classes.container__dark__card__item__img :classes.container__card__item__img} src={Project6 } alt="bandsite__img" />
+                    <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
+                        <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 6</h1>
+                        <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
             </div>

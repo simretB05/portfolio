@@ -91,11 +91,7 @@ body {
 .main {
   padding: 1rem;
   background-color: hsl(0deg, 0%, 100%);
-}
-@media screen and (min-width: 768px) {
-  .main {
-    height: 100vh;
-  }
+  height: 100%;
 }
 @media screen and (min-width: 1020px) {
   .main {
@@ -163,11 +159,7 @@ body {
 .main__dark {
   padding: 1rem;
   background-color: #191919;
-}
-@media screen and (min-width: 768px) {
-  .main__dark {
-    height: 104vh;
-  }
+  height: 100%;
 }
 @media screen and (min-width: 1020px) {
   .main__dark {

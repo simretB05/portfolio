@@ -91,7 +91,7 @@ body {
 .main {
   padding: 1rem;
   background-color: #f7f7f7;
-  height: 100vh;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .main {
@@ -193,7 +193,7 @@ body {
 .main__dark {
   padding: 1rem;
   background-color: #0e0e0e;
-  height: 104vh;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .main__dark {

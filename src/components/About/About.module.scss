@@ -3,7 +3,7 @@
 .main{
     padding: $p-base;
     background-color: #f7f7f7;
-    height: 100vh;
+    height: 100%;
     @include tablet-query{
     display: flex;
 
@@ -85,7 +85,7 @@
 .main__dark{
     padding: $p-base;
     background-color: $c-banana-sim-black;
-    height: 104vh;
+    height: 100%;
     
     @include tablet-query{
     display: flex;

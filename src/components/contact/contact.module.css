@@ -90,7 +90,8 @@ body {
 
 .form__container {
   font-family: "Kumbh Sans";
-  background-color: hsl(0deg, 0%, 96.86%);
+  background-color: hsl(0deg, 0%, 100%);
+  height: 100%;
 }
 @media screen and (min-width: 1020px) {
   .form__container {
@@ -107,7 +108,6 @@ body {
   color: hsl(265.71deg, 36.21%, 45.49%);
   width: 80%;
   margin: 0 auto;
-  padding: 1rem;
 }
 @media screen and (min-width: 1020px) {
   .form__container__title {
@@ -145,7 +145,7 @@ body {
 
 .form__container__dark {
   font-family: "Kumbh Sans";
-  background-color: #0e0e0e;
+  background-color: #191919;
 }
 @media screen and (min-width: 1020px) {
   .form__container__dark {
@@ -162,6 +162,7 @@ body {
   color: hsl(0deg, 0%, 100%);
   width: 80%;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 @media screen and (min-width: 1020px) {
   .form__container__dark__title {
@@ -248,6 +249,7 @@ body {
   margin: 0 auto;
   margin: 0 auto;
   padding: 1rem;
+  height: 100%;
 }
 @media screen and (min-width: 1020px) {
   .form__dark {
@@ -260,7 +262,7 @@ body {
 .form__dark__input__text {
   width: 100%;
   padding: 0.8rem;
-  background-color: #1c1a1c;
+  background-color: #9d9b9d;
   border: none;
   color: rgb(110, 108, 108);
 }
@@ -270,7 +272,7 @@ body {
 }
 .form__dark__input__textArea {
   padding: 0.8rem;
-  background-color: #1c1a1c;
+  background-color: #9d9b9d;
   border: none;
   resize: none;
   outline: none;

@@ -3,9 +3,10 @@
 .main{
     padding: $p-base;
     background-color:$c-white;
-    
+    height: 100%;
+
     @include tablet-query{
-      height: 100vh;
+      
   
     }
     @include laptop-query{
@@ -70,8 +71,10 @@
 .main__dark{
   padding: $p-base;
   background-color:#191919;
+  height: 100%;
+
   @include tablet-query{
-    height: 104vh;
+    
 
   }
   @include laptop-query{
