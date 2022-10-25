@@ -29,7 +29,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 1</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>this is a music band project i did for an assignment for a bootcamp. I used react and the project involves adding concert tikets and deleting them plus adding a comment on the reviwe section</p>
-                        <a href="https://634ef0c92b0ded17e0ef78d4--sunny-bonbon-17baef.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://sunny-bonbon-17baef.netlify.app"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
                 <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
