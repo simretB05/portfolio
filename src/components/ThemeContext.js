@@ -1,4 +1,5 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
+
 const ThemContext = React.createContext()
 const ThemeUpdateContext = React.createContext()
 
@@ -18,7 +19,7 @@ export function ThemeProvider({ children }) {
     return (
     
       <ThemContext.Provider value={isDarkTheme}>
-          <ThemeUpdateContext.Provider value={ onThemeDark}>
+          <ThemeUpdateContext.Provider value={onThemeDark}>
               {children}
           </ThemeUpdateContext.Provider>
           </ThemContext.Provider>

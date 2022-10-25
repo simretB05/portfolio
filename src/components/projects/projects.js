@@ -14,15 +14,8 @@ import Project3 from  '../images/UrlShortning.jpg';
 import Project4 from '../images/bookmark.jpg'; 
 import Project5 from  '../images/essentialoilReact.jpg';
 import Project6 from '../images/sneakerCompany.jpg' 
-
-
-
-
-
-
-
 import classes from "../projects/projects.module.scss";
-import SkillsComponent from '../SkillsPro/skillsComponent';
+import SkillsComponent  from '../SkillsPro/skillsComponent';
 
 function Projects() {
   const isDarkTheme = useTheme();
@@ -44,7 +37,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 2</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://unique-blancmange-c3b065.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
                 <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
@@ -52,7 +45,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 3</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://unique-blancmange-c3b065.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
                 <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
@@ -60,7 +53,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 4</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://determined-brahmagupta-fbb485.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
                 <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
@@ -68,7 +61,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 5</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://63522886386d023eb61d34e4--dancing-arithmetic-dee120.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                   </div>
                   <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
@@ -76,14 +69,12 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 6</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="#"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://taupe-stroopwafel-935142.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-       
 )
 }
-
 export default Projects;
