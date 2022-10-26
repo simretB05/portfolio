@@ -45,7 +45,7 @@ function Projects() {
                     <div className={isDarkTheme ?classes.container__dark__card__item__details: classes.container__card__item__details}>
                         <h1 className={isDarkTheme ?classes.container__dark__card__item__details__title:classes.container__dark__card__item__details__title}>Project 3</h1>
                         <p className={isDarkTheme ? classes.container__dark__card__item__details__text:classes.container__card__item__details__text}>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a href="https://unique-blancmange-c3b065.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
+                        <a href="https://url-shortening-123.netlify.app/"><button className={isDarkTheme ? classes.container__dark__card__item__details__btn:classes.container__card__item__details__btn}>View</button></a>
                     </div>
                 </div>
                 <div className={isDarkTheme ?classes.container__dark__card__item: classes.container__card__item}>
