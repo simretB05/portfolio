@@ -43,7 +43,7 @@ function Home() {
                       <label  onClick={onThemeDark}className={isDarkTheme ? classes.header__theme__toggle__dark__lable :classes.header__theme__toggle__lable} for="darkmode-toggle">
                           <FontAwesomeIcon className={isDarkTheme ? classes.FontAwesomeIconSun__dark:classes.FontAwesomeIconSun}  icon={faSun}  />
                            <FontAwesomeIcon className={isDarkTheme ? classes.FontAwesomeIconMoon__dark:classes.FontAwesomeIconMoon} icon={faMoon} />                     
-                           </label> 
+                        </label> 
                 
                     <a className={classes.header__toggle__home__link} href="#home">
                         <img className={ classes.header__toggle__logo} src={ isDarkTheme ? LogoDark :Logo} alt="log img"/>
@@ -68,7 +68,6 @@ function Home() {
                     </ul>
         
                 </nav>
-    
 
           </header>
     </>
