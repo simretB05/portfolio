@@ -33,7 +33,6 @@
             width: 17px;
             height:2px;
             background-color: $c-horeble;
-            ;
             transition: all .5s ease;
             }
             &__burger::before,::after{
@@ -105,8 +104,6 @@
                 transition: all .5s ease-in-out;
                 transform: rotate(-45deg) translate(35px,35px);
             }
-           
-
 .nav{
     
   @include flex-end;
@@ -266,7 +263,6 @@
         color: $c-deep-red;
         &:hover{
             color:$c-dark-green;
-            
         }
 
     }
@@ -357,7 +353,6 @@
                 height:2px;
                 background-color: $c-dark-moderate-cyan;
                 box-shadow:  0 2px 5px  rbga(255,101,47,.2);
-                
             }
             &__burger::before{
                 transform: translateY(-5px);
@@ -392,7 +387,6 @@
             background-color: $c-dark-moderate-cyan;
             transition: all .5s ease;
             transform: translateX(-50px);
-
 }
 .header__dark__toggle__btn__open::before{
                 content: '';
@@ -417,8 +411,6 @@
                 transition: all .5s ease-in-out;
                 transform: rotate(-45deg) translate(35px,35px);
             }
-           
-
 .nav__dark{
     
   @include flex-end;
@@ -457,7 +449,6 @@
         transform: none;
         transition: none;
       }
-   
     &__description{
         font-weight:$fw-black;
         padding: $p-base;
@@ -662,7 +653,6 @@
         width: 15.5px;
         top:0;
         z-index: 100;
-    
     }
     
    
