@@ -19,6 +19,7 @@ function Home() {
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p);
     };
+    
     const isDarkTheme = useTheme();
     const onThemeDark = useThemeUpdate();
 

@@ -9,17 +9,15 @@ function About() {
     const isDarkTheme = useTheme();
     return (
         
+        
         <div  id="about" className={ isDarkTheme?classes.content__dark: classes.content}>
         <div className={isDarkTheme? classes.main__dark:classes.main}>
             <div className={ isDarkTheme? classes.main__dark__container:classes.main__container}>
                 <div className={isDarkTheme? classes.main__dark__container__card:classes.main__container__card}>
                     <h3 className={isDarkTheme? classes.main__dark__container__card__title:classes.main__container__card__title}> About Me</h3>
                     <div className={isDarkTheme? classes.main__dark__container__card__content:classes.main__container__card__content}>
-                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> There are many variations of passages of Lorem Ipsum available,
-                            but the majority have suffered in some form, by injected humour,
-                            or randomised words which dont look even slightly believable. If
-                            you are going to use a passage of Lorem Ipsum,</p>
-                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> There are many variations of passages of Lorem Ipsum available,
+                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> </p>
+                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}>Lorem Ipsum available,
                             but the majority have suffered in some form, by injected humour,
                             or randomised words which dont look even slightly believable. If
                             you are going to use a passage of Lorem Ipsum,</p>

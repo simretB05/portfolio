@@ -25,15 +25,14 @@ function Skills() {
                 <h1 className={isDarkTheme ? classes.main__dark__container__card__title:classes.main__container__card__title}> check out my progressing skills</h1>
             </div>
             <div className={classes.main__container__bodyCard}>
-                <p className={isDarkTheme ? classes.main__dark__container__bodyCard__body:classes.main__container__bodyCard__body}> There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered in some form, by injected humour,</p>
+                <p className={isDarkTheme ? classes.main__dark__container__bodyCard__body:classes.main__container__bodyCard__body}> I started my web development journey aiming to gain skills in the ever-developing vast field of Computers and information technology world. My skills came gradually. I am still working on projects to perfect my knowledge, But here are some of my current skills including cloud computing on AWS services.  </p>
             </div>
             <div className={classes.service__container}>
             <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
                       <FontAwesomeIcon icon={faLaptop} className={classes.FontAwesomeIcon} size='2x' />
                         <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Web Development</h3>
-                            <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p>
+                            {/* <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}></p> */}
                           <div className={classes.service__card__container__icons}>
                               <SkillsComponent/>
                              </div>
@@ -44,7 +43,7 @@ function Skills() {
                       <FontAwesomeIcon  className={classes.FontAwesomeIcon} size='2x' icon={faCompassDrafting} />
                         <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Design</h3>
-                            <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p>
+                            {/* <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p> */}
                             <div className={classes.service__card__container__icons}>
                                 <div className={isDarkTheme? classes.skills__dark: classes.skills}>
                                     <div className={classes.skillsGrid}>
@@ -59,7 +58,7 @@ function Skills() {
                       <FontAwesomeIcon  className={classes.FontAwesomeIcon} size='2x' icon={faCloud} />
                         <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Cloud Service</h3>
-                            <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p>
+                            {/* <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p> */}
                             <div className={classes.service__card__container__icons}>
                                 <div className={isDarkTheme? classes.skills__dark: classes.skills}>
                                   <div className={classes.skillsGrid}>
@@ -74,7 +73,7 @@ function Skills() {
                       <FontAwesomeIcon  className={classes.FontAwesomeIcon} size='2x'icon={faDatabase} />
                         <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Backend Technologies</h3>
-                            <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p>
+                            {/* <p className={isDarkTheme ? classes.service__card__dark__container__body:classes.service__card__container__body}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, eum, Laudantium nisi harum voluptatem</p> */}
                             <div className={classes.service__card__container__icons}>
                             <div className={isDarkTheme? classes.skills__dark: classes.skills}>
                                     <div className={classes.skillsGrid}>

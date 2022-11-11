@@ -51,6 +51,10 @@
             font-size: 0.91rem;
             font-weight:$fw-normal;
             color:$c-sim-black;
+            text-align: center;
+            @include laptop-l-query{
+              width: 60%;
+            }
         }
     }
     &__content{
@@ -92,7 +96,7 @@
       margin: 0 auto;
       &__title{
       font-size: 1.7rem;
-      color: $c-white;
+      color: $c-dark-moderate-cyan;
       font-weight: 900;
       text-align: center;
      padding: 2rem;
@@ -120,6 +124,11 @@
           font-size: 0.91rem;
           font-weight:$fw-normal;
           color:$c-grayish-blue;
+          text-align: center;
+          @include laptop-l-query{
+            width: 60%;
+
+          }
         
               
       }
@@ -151,7 +160,7 @@
     width: 100%;
     padding: 0;
     @include flex-start;
-    height: 18rem;
+    height: 15rem;
     margin: 1rem;
     background-color:#c4c4c4;
     border-radius: .5rem;
@@ -177,7 +186,7 @@
     width: 100%;
     padding: 0;
     @include flex-start;
-    height: 18rem;
+    height: 15rem;
     margin: 1rem;
     background-color: #161515;
     border-radius: .5rem;

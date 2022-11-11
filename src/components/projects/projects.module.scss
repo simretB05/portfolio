@@ -24,9 +24,25 @@
 
             }
     }
-
+    &__titleText{
+        text-align: center;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.0112rem;
+        font-size: 15px;
+        padding: 1rem;
+        text-transform: none;
+        font-size: 0.91rem;
+        font-weight: 300;
+        color: #0a0a0a;
+        @include laptop-l-query{
+            width: 60%;
+            margin: 0 auto;
+        }
+}
     &__card{
         width: 100%;
+        margin-top: 1.5rem;
         @include flex-center;
         flex-wrap: wrap;
         
@@ -70,14 +86,14 @@
                 &__text{
                     font-weight: 300;
                     background-color: $c-grayish-blue;
-                    line-height: 26px;
+                    line-height: 20px;
                     letter-spacing: 0.0112rem;
-                    line-height: 30px;
                     font-size: 15px;
-                    padding: 1rem;
+                    padding: .5rem;
+                    text-transform: none;
                     font-size: 0.91rem;
                     font-weight: 300;
-                    color: #2f2f2f;
+                    color: #0a0a0a;
                 
                 
                 }
@@ -115,7 +131,7 @@
   }
     &__title{
         font-size: 2.7rem;
-        color:$c-dark-green;
+        color:$c-dark-moderate-cyan;
         text-align: center;
         text-transform: capitalize;
         padding: 1rem;
@@ -125,8 +141,25 @@
 
             }
     }
-
+    &__titleText{
+        text-align: center;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0.0112rem;
+        font-size: 15px;
+        padding: 1rem;
+        text-transform: none;
+        font-size: 0.91rem;
+        font-weight: 300;
+        color: $c-grayish-blue;
+        @include laptop-l-query{
+            width: 60%;
+            margin: 0 auto;
+            
+        }
+}
     &__card{
+        margin-top: 1.5rem;
         width: 100%;
         @include flex-center;
         flex-wrap: wrap;
@@ -170,18 +203,14 @@
                 &__text{
                     font-weight: 300;
                     background-color: $c-grayish-blue;
-                    line-height: 26px;
+                    line-height: 20px;
                     letter-spacing: 0.0112rem;
-                    line-height: 30px;
                     font-size: 15px;
-                    padding: 1rem;
+                    padding: .5rem;
+                    text-transform: none;
                     font-size: 0.91rem;
                     font-weight: 300;
-                    color: #2f2f2f;
-
-                    
-                
-                
+                    color: #0a0a0a;
                 }
                 &__btn{
                     color: #1f3d47;

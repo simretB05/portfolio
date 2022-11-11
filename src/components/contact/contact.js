@@ -20,7 +20,7 @@ function Contact() {
 
             <div  className={isDarkTheme? classes.form__container__dark:classes.form__container}>
                 <h1 className={isDarkTheme ?classes.form__container__dark__title:classes.form__container__title}>Contact</h1>
-                <p className={isDarkTheme? classes.form__container__dark__copy:classes.form__container__copy}>we are here for any of your question,suggestion or request  you have about our company and products!</p>
+                <p className={isDarkTheme? classes.form__container__dark__copy:classes.form__container__copy}> If you have any questions, feel free to contact me at the address provided or drop me a message with your name and email address in the message box.</p>
                 <div className={isDarkTheme?classes.address__dark:classes.address}>
                         <h3 className={isDarkTheme? classes.address__dark__title:classes.address__title}>Let's Connect</h3>
                         <ul className={classes.address__list}>
