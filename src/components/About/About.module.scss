@@ -77,6 +77,10 @@
                 font-size: 0.91rem;
                 font-weight:$fw-normal;
                 color:$c-sim-black;
+                @include laptop-query{
+                    width: 50%;
+
+                }
             }
         }
      }

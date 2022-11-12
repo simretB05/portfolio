@@ -209,6 +209,10 @@ body {
   cursor: pointer;
   margin: 1rem;
 }
+.container__card__item__details__btn:hover {
+  border: 1px solid hsl(0deg, 0%, 100%);
+  background-color: #5adf7d;
+}
 
 .container__card__item:hover .container__card__item__details {
   right: 0;
@@ -333,6 +337,10 @@ body {
   font-weight: 500;
   cursor: pointer;
   margin: 1rem;
+}
+.container__dark__card__item__details__btn:hover {
+  border: 1px solid hsl(0deg, 0%, 100%);
+  background-color: hsl(265.71deg, 36.21%, 45.49%);
 }
 
 .container__dark__card__item:hover .container__dark__card__item__details {
