@@ -192,6 +192,7 @@ body {
 @media screen and (min-width: 1020px) {
   .main__container__card__content__body {
     width: 50%;
+    height: 19rem;
   }
 }
 

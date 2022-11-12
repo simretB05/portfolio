@@ -79,6 +79,7 @@
                 color:$c-sim-black;
                 @include laptop-query{
                     width: 50%;
+                    height: 19rem;
 
                 }
             }
