@@ -18,7 +18,7 @@ function About() {
                     <div className={isDarkTheme? classes.main__dark__container__card__content:classes.main__container__card__content}>
                         <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> In 2021 I started looking into the field of web development. My passion have developed  ever since. I  dedicated myself to learning and Creating websites that are user-friendly and fun. I have gone through different skill-building boot camps over the last year to become a Full Stack Web Developer. I am a dedicated problem solver, Skilled in analyzing data, detail-oriented, team player, with excellent communication skills. 
  </p>
-                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> Highlights of what I have  learned so far include, frontend web development, interactive front end as per the design, React and React Native, Redux for State management, Building REST API, and Managing database</p>
+                        <p className={isDarkTheme? classes.main__dark__container__card__content__body:classes.main__container__card__content__body}> Highlights of what I have  learned so far include, frontend web development, interactive front end as per the design, React and React Native, Redux for State management, Building REST API, and Managing database,working with groups on Git and Github </p>
                     </div>
                 </div>
                 <div className={classes.main__container__signture}>
