@@ -116,8 +116,27 @@ body {
     font-size: 2.7rem;
   }
 }
+.container__titleText {
+  text-align: center;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.0112rem;
+  font-size: 15px;
+  padding: 1rem;
+  text-transform: none;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: #0a0a0a;
+}
+@media screen and (min-width: 1440px) {
+  .container__titleText {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .container__card {
   width: 100%;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,14 +187,14 @@ body {
 .container__card__item__details__text {
   font-weight: 300;
   background-color: hsl(210deg, 4%, 67%);
-  line-height: 26px;
+  line-height: 20px;
   letter-spacing: 0.0112rem;
-  line-height: 30px;
   font-size: 15px;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-transform: none;
   font-size: 0.91rem;
   font-weight: 300;
-  color: #2f2f2f;
+  color: #0a0a0a;
 }
 .container__card__item__details__btn {
   color: hsl(0deg, 0%, 100%);
@@ -211,7 +230,7 @@ body {
 }
 .container__dark__title {
   font-size: 2.7rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: #5adf7d;
   text-align: center;
   text-transform: capitalize;
   padding: 1rem;
@@ -222,7 +241,26 @@ body {
     font-size: 2.7rem;
   }
 }
+.container__dark__titleText {
+  text-align: center;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.0112rem;
+  font-size: 15px;
+  padding: 1rem;
+  text-transform: none;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: hsl(210deg, 4%, 67%);
+}
+@media screen and (min-width: 1440px) {
+  .container__dark__titleText {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .container__dark__card {
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -273,14 +311,14 @@ body {
 .container__dark__card__item__details__text {
   font-weight: 300;
   background-color: hsl(210deg, 4%, 67%);
-  line-height: 26px;
+  line-height: 20px;
   letter-spacing: 0.0112rem;
-  line-height: 30px;
   font-size: 15px;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-transform: none;
   font-size: 0.91rem;
   font-weight: 300;
-  color: #2f2f2f;
+  color: #0a0a0a;
 }
 .container__dark__card__item__details__btn {
   color: #1f3d47;

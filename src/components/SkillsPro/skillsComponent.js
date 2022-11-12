@@ -10,7 +10,7 @@ function SkillsComponent() {
 
   return (
     <div className={isDarkTheme? classes.skills__dark: classes.skills}>
-      <div className={classes.skillsGrid}>
+      {/* <div className={classes.skillsGrid}> */}
                 <SkillsPro source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="The logo icon for react" title="React"/>
                 <SkillsPro source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="The logo icon for HTML 5" title="HTML 5"/>
                 <SkillsPro source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="The logo icon for CSS3" title="CSS 3"/>
@@ -19,7 +19,7 @@ function SkillsComponent() {
                 <SkillsPro source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="The logo icon for Sass" title="Sass" />
                 <SkillsPro source= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="The logo icon for Python" title="Python" />
               
-            </div>            
+            {/* </div>             */}
         </div>
   )
 }

@@ -15,7 +15,6 @@ import Project4 from '../images/bookmark.jpg';
 import Project5 from  '../images/essentialoilReact.jpg';
 import Project6 from '../images/sneakerCompany.jpg' 
 import classes from "../projects/projects.module.scss";
-import SkillsComponent  from '../SkillsPro/skillsComponent';
 
 function Projects() {
   const isDarkTheme = useTheme();

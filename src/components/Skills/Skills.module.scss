@@ -4,10 +4,7 @@
     padding: $p-base;
     background-color:$c-white;
     height: 100%;
-
     @include tablet-query{
-      
-  
     }
     @include laptop-query{
       @include flex-center;
@@ -17,6 +14,8 @@
         @include font-family-normal;
          width: 100%;
         margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
     &__card{
         width: 90%;
         @include flex-center;
@@ -73,78 +72,73 @@
 }
 
 .main__dark{
-  padding: $p-base;
-  background-color:#191919;
-  height: 100%;
-
-  @include tablet-query{
-    
-
-  }
-  @include laptop-query{
-    @include flex-center;
-  }
-  &__container{
-      color: $c-sim-black;
-      @include font-family-normal;
-       width: 100%;
-      margin: 0 auto;
-  &__card{
-      width: 90%;
+    padding: $p-base;
+    background-color:$c-banana-sim-black;
+    height: 100%;
+    @include tablet-query{
+    }
+    @include laptop-query{
       @include flex-center;
-      flex-direction: column;
-      margin: 0 auto;
-      &__title{
-      font-size: 1.7rem;
-      color: $c-dark-moderate-cyan;
-      font-weight: 900;
-      text-align: center;
-     padding: 2rem;
-      text-transform:capitalize;
-      @include tablet-query{
-        font-size: 2rem;
+    }
+    &__container{
+        color: $c-banana-sim-black;
+        @include font-family-normal;
+         width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    &__card{
+        width: 90%;
+        @include flex-center;
+        flex-direction: column;
+        margin: 0 auto;
+        &__title{
+        font-size: 1.7rem;
+        color: $c-dark-moderate-cyan;
+        text-align: center;
+       padding: 2rem;
+        text-transform:capitalize;
+        @include tablet-query{
+          font-size: 2rem;
 
-      }
-     
-      @include laptop-query{
-        font-size: 3rem;
+        }
+        @include laptop-query{
+          font-size: 3rem;
 
-      }
-      }
-  
-  }
-  &__bodyCard{
-      margin-bottom: 5rem;
-      @include flex-center;
-      
-      &__body{
-          letter-spacing: 0.0112rem;
-          line-height: 26px;
-          font-size: 15px;
-          font-size: 0.91rem;
-          font-weight:$fw-normal;
-          color:$c-grayish-blue;
-          text-align: center;
-          @include laptop-l-query{
-            width: 60%;
-
-          }
+        }
         
-              
-      }
-  }
-  &__content{
-  width: 90%;
-  height: 90%;
-  
-  &__card{
-      margin: $m-base;
-      width: 100%;
-      height: 300px;
-      border: 1px solid $c-soft-red;
-  }
-  
-  }
+        }
+    
+    }
+    &__bodyCard{
+        margin-bottom: 5rem;
+        @include flex-center;
+
+        &__body{
+            letter-spacing: 0.0112rem;
+            line-height: 26px;
+            font-size: 15px;
+            font-size: 0.91rem;
+            font-weight:$fw-normal;
+            color:$c-sim-black;
+            text-align: center;
+            @include laptop-l-query{
+              width: 60%;
+            }
+        }
+    }
+    &__content{
+    width: 90%;
+    height: 90%;
+    
+    &__card{
+        margin: $m-base;
+        width: 100%;
+        height: 300px;
+        border: 1px solid $c-soft-red;
+    }
+    
+    }
 }
 }
 .service__container{
@@ -159,11 +153,12 @@
   .service__card{
     width: 100%;
     padding: 0;
+    margin: 1rem;
     @include flex-start;
     height: 15rem;
-    margin: 1rem;
     background-color:#c4c4c4;
     border-radius: .5rem;
+    margin-top: 1rem;
     // transform: scale(.9);//later
     &:hover{
       background-color: #c2afd9;
@@ -187,8 +182,8 @@
     padding: 0;
     @include flex-start;
     height: 15rem;
-    margin: 1rem;
     background-color: #161515;
+    margin: 1rem;
     border-radius: .5rem;
     // transform: scale(.9);//later
     &:hover{
@@ -219,13 +214,14 @@ background-color: #2c613a;
     @include flex-start;
     flex-direction: column;
     margin: 1rem;
+    
     &__icons{
       @include flex-center;
      }
   &__title{
     @include font-family-normal;
     text-transform:capitalize;
-    color:$c-sim-black;
+    color:$c-dark-green;
     text-align: center;
     &:hover{
       color: $c-white;
@@ -249,13 +245,14 @@ background-color: #2c613a;
     @include flex-start;
     flex-direction: column;
     margin: 1rem;
+   
     &__icons{
       @include flex-center;
      }
   &__title{
     @include font-family-normal;
     text-transform:capitalize;
-    color:$c-grayish-blue;
+    color:$c-dark-moderate-cyan;
     text-align: center;
   }
   &__body{
@@ -274,20 +271,62 @@ background-color: #2c613a;
     }
   }
   .skillsGrid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    grid-auto-rows: auto;
-    height: auto;
-    padding: 1rem;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background: #6e4a9e;
+    border-radius: 15px;
+    position: relative;
+    margin: 1rem;
+
+    &::before{
+      content: "";
+    height: 100%;
+    width: 4px;
+    background: #6e4a9e;
+    position: absolute;
+    right: calc(100% + 3rem);
+    top: 0.8rem;
+
+    border-radius: 50px;
+    opacity: 0.5;
+    }
   }
- 
+  .skillsGrid__dark{
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background: $c-grayish-blue;
+    border-radius: 15px;
+    position: relative;
+    margin: 1rem;
+
+    &::before{
+      content: "";
+    height: 100%;
+    width: 4px;
+    background: $c-dark-moderate-cyan;
+    position: absolute;
+    right: calc(100% + 3rem);
+    top: 0.8rem;
+
+    border-radius: 50px;
+    opacity: 0.5;
+    }
+  }
   .skillsGrid__img {
-  height: 75px;
+  height: 65px;
   width: 45px;
+  color: red;
   }
+  .skillsGrid__dark__img {
+    height: 65px;
+    width: 45px;
+    }
   .skills{
-  background-color:rgb(219 210 210);
+  // background-color:rgb(219 210 210);
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -295,9 +334,14 @@ background-color: #2c613a;
   text-align: center;
   justify-content: center;
   align-items: center;
+  height: 10rem;
+    width: 12rem;
+    @include laptop-query{
+      width: 11.5rem;
+
+    }
   }
   .skills__dark{
-    background-color: hsl(212deg 47% 20%);
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -305,6 +349,12 @@ background-color: #2c613a;
   text-align: center;
   justify-content: center;
   align-items: center;
+  height: 10rem;
+  width: 12rem;
+  @include laptop-query{
+    width: 11.5rem;
+
+  }
     
   }
   .skillsGrid__amazon{

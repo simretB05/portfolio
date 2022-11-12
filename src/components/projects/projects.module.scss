@@ -109,6 +109,10 @@
                     font-weight: 500;
                     cursor: pointer;
                     margin: 1rem;
+                    &:hover{
+                        border:1px solid $c-white;
+                        background-color: $c-dark-moderate-cyan;
+                    }
                 }
             }
         }
@@ -225,6 +229,10 @@
                     font-weight: 500;
                     cursor: pointer;
                     margin: 1rem;
+                    &:hover{
+                        border:1px solid $c-white;
+                        background-color: $c-dark-green;
+                    }
                 }
             }
         }
