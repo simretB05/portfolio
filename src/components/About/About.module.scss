@@ -216,7 +216,7 @@
     }
     @include laptop-query{
         align-items: center;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; 
         height:100vh;
         &::before {
             content: "";
