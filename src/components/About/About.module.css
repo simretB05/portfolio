@@ -151,8 +151,8 @@ body {
   flex-direction: column;
 }
 .profile-card__pic {
-  width: 10rem;
-  height: 10rem;
+  width: 12.5rem;
+  height: 12.5rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -163,14 +163,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .profile-card__pic {
-    width: 15rem;
-    height: 15rem;
+    width: 15.5rem;
+    height: 15.5rem;
   }
 }
 @media screen and (min-width: 1020px) {
   .profile-card__pic {
-    width: 19rem;
-    height: 19rem;
+    width: 19.5rem;
+    height: 19.5rem;
   }
 }
 .profile-info {
@@ -190,7 +190,7 @@ body {
 }
 .profile-info p {
   font-size: 1rem;
-  color: hsl(357.84deg, 88.99%, 42.75%);
+  color: #0e0e0e;
 }
 @media screen and (min-width: 1020px) {
   .profile-info p {

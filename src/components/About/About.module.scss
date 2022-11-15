@@ -55,8 +55,8 @@
         flex-direction: column;
     
         &__pic{
-            width:10rem;
-            height:10rem;
+            width:12.5rem;
+            height:12.5rem;
             object-fit: cover;
             border-radius: 50%;
             border:  .4rem dotted $c-dark-green;
@@ -64,12 +64,12 @@
             opacity: 1;
             padding: .3rem;
             @include tablet-query{
-            width: 15rem;
-            height: 15rem;
+            width: 15.5rem;
+            height: 15.5rem;
             }
             @include laptop-query{
-                width: 19rem;
-                height: 19rem;
+                width: 19.5rem;
+                height: 19.5rem;
                 }
            
         }
@@ -90,7 +90,7 @@
       }
       & p{
         font-size: 1rem;
-        color: $c-deep-red;
+        color: $c-banana-sim-black;
         @include laptop-query{
           font-size: 1.5rem;
           font-size: 1.2rem;
