@@ -293,7 +293,7 @@
       }
       & p{
         font-size: 1rem;
-        color: red;
+        color: $c-banana-sim-black;
         @include laptop-query{
           font-size: 1.5rem;
           font-size: 1.2rem;

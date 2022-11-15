@@ -427,7 +427,7 @@ body {
 }
 .profile-dark__info p {
   font-size: 1rem;
-  color: red;
+  color: #0e0e0e;
 }
 @media screen and (min-width: 1020px) {
   .profile-dark__info p {

@@ -133,7 +133,7 @@ body {
   position: relative;
   width: 17px;
   height: 2px;
-  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  background-color: hsl(0deg, 0%, 85.1%);
   transition: all 0.5s ease;
 }
 .header__toggle__btn__burger::before, .header__toggle__btn ::after {
@@ -143,7 +143,7 @@ body {
   right: 0;
   width: 17px;
   height: 2px;
-  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  background-color: hsl(0deg, 0%, 85.1%);
   box-shadow: 0 2px 5px rbga(255, 101, 47, 0.2);
 }
 .header__toggle__btn__burger::before {
@@ -185,7 +185,7 @@ body {
   right: 0;
   width: 17px;
   height: 2px;
-  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  background-color: hsl(0deg, 0%, 85.1%);
   transition: all 0.5s ease-in-out;
   transform: rotate(45deg) translate(35px, -35px);
 }
@@ -197,7 +197,7 @@ body {
   right: 0;
   width: 17px;
   height: 2px;
-  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  background-color: hsl(0deg, 0%, 85.1%);
   box-shadow: 0 2px 5px rbga(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
   transform: rotate(-45deg) translate(35px, 35px);
@@ -276,7 +276,7 @@ body {
 .nav__list__description__link {
   font-size: 0.7rem;
   letter-spacing: 1.5px;
-  color: hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(0deg, 0%, 85.1%);
   font-family: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -284,7 +284,7 @@ body {
   padding: 1rem 0;
 }
 .nav__list__description__link:hover {
-  color: #0e0e0e;
+  color: hsl(0deg, 0%, 85.1%);
 }
 @media screen and (min-width: 1020px) {
   .nav__list__description__link {
@@ -362,7 +362,7 @@ body {
 }
 .nav__list__description__login:hover {
   color: #0e0e0e;
-  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  background-color: #0e0e0e;
   border-color: hsl(240deg, 2.04%, 19.22%);
 }
 @media screen and (min-width: 1020px) {
