@@ -83,323 +83,470 @@ body {
 }
 
 .content__dark {
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 0 0;
   min-height: 100%;
   background-color: #0e0e0e;
 }
 
 .main {
-  padding: 1rem;
-  background-color: #f7f7f7;
-  height: 100%;
+  width: 100%;
+  height: 77rem;
+  display: flex;
+  flex-direction: column;
+  background-color: c-white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1020px) {
   .main {
-    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
+  .main::before {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -4;
   }
 }
-.main__container {
-  color: hsl(0deg, 0%, 85.1%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  font-family: "Kumbh Sans";
-  width: 100%;
-  margin: 0 auto;
-}
-.main__container__btnCard {
-  width: 90%;
-  padding-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.main__container__btnCard__btn {
+
+.profile {
+  max-width: 100%;
+  height: 50vh;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(265.71deg, 36.21%, 45.49%);
-  padding: 0.91rem;
-  border: none;
-  border-radius: 7px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.main__container__btnCard__btn:hover {
-  background-color: #2f2f2f;
-  color: hsl(0deg, 0%, 85.1%);
-  font-weight: 900;
-}
-.main__container__signture {
-  font-family: "Passions Conflict";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-}
-.main__container__signture__text {
-  font-family: "Passions Conflict";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-  color: hsl(265.71deg, 36.21%, 45.49%);
-  font-weight: 100;
-  padding-left: 2rem;
-}
-.main__container__card {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Kumbh Sans";
   flex-direction: column;
 }
-.main__container__card__title {
-  font-size: 3.7rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+@media screen and (min-width: 1020px) {
+  .profile {
+    background-image: none;
+    width: 40%;
+  }
+}
+.profile-card {
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
-}
-.main__container__card__content {
+  border-radius: 50%;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.profile-card__pic {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 0.4rem dotted hsl(256.36deg, 25.88%, 33.33%);
+  background-color: rgba(196, 196, 196, 0.7);
+  opacity: 1;
+  padding: 0.3rem;
 }
 @media screen and (min-width: 768px) {
-  .main__container__card__content {
-    padding: 2rem;
+  .profile-card__pic {
+    width: 15rem;
+    height: 15rem;
   }
 }
 @media screen and (min-width: 1020px) {
-  .main__container__card__content {
-    padding: 5rem;
-    flex-direction: row;
-  }
-}
-.main__container__card__content__body {
-  letter-spacing: 0.0112rem;
-  line-height: 30px;
-  font-size: 15px;
-  padding: 1rem;
-  font-size: 0.91rem;
-  font-weight: 300;
-  color: #2f2f2f;
-}
-@media screen and (min-width: 1020px) {
-  .main__container__card__content__body {
-    width: 50%;
+  .profile-card__pic {
+    width: 19rem;
     height: 19rem;
   }
 }
-
-.main__dark {
-  padding: 1rem;
-  background-color: #0e0e0e;
-  height: 100%;
-}
-@media screen and (min-width: 768px) {
-  .main__dark {
-    display: flex;
-  }
-}
-.main__dark__container {
-  color: hsl(0deg, 0%, 85.1%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.profile-info {
   width: 100%;
-  font-family: "Kumbh Sans";
-  width: 100%;
-  margin: 0 auto;
+}
+.profile-info h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.0913rem;
+  color: #4b3f6b;
 }
 @media screen and (min-width: 1020px) {
-  .main__dark__container {
-    display: flex;
-    align-items: center;
+  .profile-info h2 {
+    font-size: 1.9rem;
+  }
+}
+.profile-info p {
+  font-size: 1rem;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+@media screen and (min-width: 1020px) {
+  .profile-info p {
+    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+  }
+}
+.profile-social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 1020px) {
+  .profile-social {
     justify-content: center;
   }
 }
-.main__dark__container__btnCard {
-  width: 90%;
-  padding-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
+@media screen and (min-width: 1440px) {
+  .profile-social {
+    margin-top: 7rem;
+    justify-content: flex-end;
+    z-index: 1;
+  }
 }
-.main__dark__container__btnCard__btn {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(265.71deg, 36.21%, 45.49%);
-  padding: 0.91rem;
-  border: none;
-  border-radius: 7px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.main__dark__container__btnCard__btn:hover {
-  background-color: #2f2f2f;
-  color: hsl(0deg, 0%, 85.1%);
-  font-weight: 900;
-}
-.main__dark__container__btnCard__btn:hover {
-  background-color: #2f2f2f;
-  color: hsl(0deg, 0%, 85.1%);
-  font-weight: 900;
-}
-.main__dark__container__signture {
-  font-family: "Passions Conflict";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-}
-.main__dark__container__signture__text {
-  font-family: "Passions Conflict";
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2.5rem;
-  padding: 0;
-  margin: 0;
-  color: hsl(265.71deg, 36.21%, 45.49%);
-  font-weight: 100;
-  padding-left: 2rem;
-}
-.main__dark__container__card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.main__dark__container__card__title {
-  font-size: 2.7rem;
-  color: #5adf7d;
-  text-align: center;
-  margin: 0 auto;
+.profile-social__link {
+  margin: 1rem;
+  color: #fff;
+  text-decoration: none;
 }
 @media screen and (min-width: 1020px) {
-  .main__dark__container__card__title {
-    font-size: 3.7rem;
+  .profile-social__link {
+    color: #4B3F6B;
   }
 }
-.main__dark__container__card__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .main__dark__container__card__content {
-    padding: 2rem;
+@media screen and (min-width: 1440px) {
+  .profile-social__link {
+    color: white;
   }
 }
-@media screen and (min-width: 1020px) {
-  .main__dark__container__card__content {
-    padding: 5rem;
-    flex-direction: row;
-  }
-}
-.main__dark__container__card__content__body {
-  letter-spacing: 0.0112rem;
-  line-height: 30px;
-  font-size: 15px;
+
+.about {
+  font-family: "Kumbh Sans";
   padding: 1rem;
+  height: 50vh;
+}
+@media screen and (min-width: 1020px) {
+  .about {
+    margin-top: 17rem;
+    width: 60%;
+  }
+}
+.about-card {
+  width: 100%;
+  margin: 0 auto;
+}
+.about-card h2 {
+  color: hsl(256.36deg, 25.88%, 33.33%);
+  font-size: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 1020px) {
+  .about-card h2 {
+    padding: 1rem;
+    text-align: start;
+  }
+}
+.about-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #4B3F6B;
+}
+@media screen and (min-width: 1020px) {
+  .about-card__body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.about-card__body p {
+  letter-spacing: 0.0112rem;
+  line-height: 26px;
+  font-size: 15px;
   font-size: 0.91rem;
   font-weight: 300;
-  color: hsl(210deg, 4%, 67%);
+  color: #4B3F6B;
+  padding: 1rem;
 }
-
-.footer__iconLinks {
-  padding-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__iconLinks {
-    width: 8rem;
+@media screen and (min-width: 1020px) {
+  .about-card__body p {
+    width: 50%;
   }
 }
-.footer__iconLinks__list {
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  padding: 0;
+.about-card__sig {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__iconLinks__list {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-.footer__iconLinks__list__item:hover {
-  color: hsl(265.71deg, 36.21%, 45.49%);
-}
-@media screen and (min-width: 768px) {
-  .footer__iconLinks__list__item {
-    padding: 0.5rem 0;
-  }
-}
-.footer__iconLinks__list__linkedIcon {
-  width: 60px;
-  height: 31px;
-  color: hsl(265.71deg, 36.21%, 45.49%);
-}
-.footer__iconLinks__list__twitter {
-  width: 60px;
-  height: 31px;
-  color: hsl(265.71deg, 36.21%, 45.49%);
-}
-.footer__iconLinks__list__instagramIcon {
-  width: 40px;
-  height: 17px;
-  color: hsl(265.71deg, 36.21%, 45.49%);
-}
-
-.footer__iconLinks__list__twitter__dark {
-  width: 60px;
-  height: 31px;
-  color: #5adf7d;
-}
-
-.footer__iconLinks__list__linkedIcon__dark {
-  width: 60px;
-  height: 31px;
-  color: #5adf7d;
-}
-
-.main__container__btnCard__btn__dark {
-  color: hsl(0deg, 0%, 100%);
-  background-color: #68c984;
-  padding: 0.91rem;
-  border: none;
-  border-radius: 7px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.main__container__btnCard__btn__dark:hover {
-  background-color: #2f2f2f;
-  color: hsl(0deg, 0%, 85.1%);
-  font-weight: 900;
-}
-
-.main__container__signture__text__dark {
+  flex-direction: column;
   font-family: "Passions Conflict";
   font-weight: 100;
   font-style: normal;
   font-size: 2.5rem;
   padding: 0;
-  margin: 0;
-  color: #5adf7d;
+  text-align: center;
+}
+@media screen and (min-width: 1020px) {
+  .about-card__sig {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.about-card__sig p {
+  color: hsl(357.84deg, 88.99%, 42.75%);
+  padding-bottom: 1rem;
+}
+.about-card__sig button {
+  color: hsl(0deg, 0%, 100%);
+  background-color: #4B3F6B;
+  padding: 0.91rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.about-card__sig button:hover {
+  background-color: hsl(256.36deg, 25.88%, 33.33%);
+  color: hsl(0deg, 0%, 85.1%);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-dark {
+  width: 100%;
+  height: 72rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #D6D6D6;
+}
+@media screen and (min-width: 768px) {
+  .main-dark {
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .main-dark {
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
+  .main-dark::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.profile-dark {
+  max-width: 100%;
+  height: 50vh;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans";
+  flex-direction: column;
+}
+@media screen and (min-width: 1020px) {
+  .profile-dark {
+    background-image: none;
+    width: 40%;
+    z-index: 1;
+  }
+}
+.profile-dark__card {
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile-dark__card-pic {
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 0.4rem dotted #4b3f6b;
+  background-color: rgba(196, 196, 196, 0.7);
+  opacity: 1;
+  padding: 0.3rem;
+}
+@media screen and (min-width: 768px) {
+  .profile-dark__card-pic {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+.profile-dark__info {
+  width: 100%;
+}
+.profile-dark__info h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.0913rem;
+  color: #4b3f6b;
+}
+@media screen and (min-width: 1020px) {
+  .profile-dark__info h2 {
+    font-size: 1.9rem;
+  }
+}
+.profile-dark__info p {
+  font-size: 1rem;
+  color: red;
+}
+@media screen and (min-width: 1020px) {
+  .profile-dark__info p {
+    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+  }
+}
+.profile-dark-social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 1020px) {
+  .profile-dark-social {
+    justify-content: center;
+  }
+}
+.profile-dark-social__link {
+  margin: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width: 1020px) {
+  .profile-dark-social__link {
+    color: #4B3F6B;
+  }
+}
+
+.about-dark {
+  font-family: "Kumbh Sans";
+  padding: 1rem;
+  height: 50vh;
+}
+@media screen and (min-width: 1020px) {
+  .about-dark {
+    margin-top: 17rem;
+    width: 60%;
+  }
+}
+.about-dark__card {
+  width: 100%;
+  margin: 0 auto;
+}
+.about-dark__card h2 {
+  color: #4B3F6B;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 1020px) {
+  .about-dark__card h2 {
+    padding: 1rem;
+    text-align: start;
+  }
+}
+.about-dark__card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #4B3F6B;
+}
+@media screen and (min-width: 1020px) {
+  .about-dark__card-body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.about-dark__card-body p {
+  letter-spacing: 0.0112rem;
+  line-height: 26px;
+  font-size: 15px;
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: #4B3F6B;
+  padding: 1rem;
+}
+@media screen and (min-width: 1020px) {
+  .about-dark__card-body p {
+    width: 50%;
+  }
+}
+.about-dark__card-sig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Passions Conflict";
   font-weight: 100;
-  padding-left: 2rem;
+  font-style: normal;
+  font-size: 2.5rem;
+  padding: 0;
+  text-align: center;
+}
+@media screen and (min-width: 1020px) {
+  .about-dark__card-sig {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.about-dark__card-sig p {
+  color: hsl(357.84deg, 88.99%, 42.75%);
+  padding-bottom: 1rem;
+}
+.about-dark__card-sig button {
+  color: hsl(0deg, 0%, 100%);
+  background-color: #4B3F6B;
+  padding: 0.91rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.about-dark__card-sig button:hover {
+  background-color: hsl(256.36deg, 25.88%, 33.33%);
+  color: hsl(0deg, 0%, 85.1%);
+  font-weight: 900;
+  text-transform: uppercase;
 }/*# sourceMappingURL=About.module.css.map */

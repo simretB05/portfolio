@@ -1,344 +1,402 @@
 @import "../../styles/styles.scss";
 
 .main{
-    padding: $p-base;
-    background-color: #f7f7f7;
-    height: 100%;
-    @include tablet-query{
+    width: 100%;
+    height:77rem;
     display: flex;
-
+    flex-direction:column;
+    background-color: c-white;
+    @include laptop-query{
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 100vh;
+        &::before {
+            content: "";
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            background-image: url("../images/bg-boost-desktop.svg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            z-index: -4;
+        }
     }
-    &__container{
-        color: $c-bright-gray;
+}
+
+.profile{
+    max-width: 100%;
+    height:50vh;
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    color: $c-white;
+    @include flex-center;
+    @include font-family-normal;
+    flex-direction: column;
+    @include laptop-query{
+    background-image: none;
+    width: 40%;
+
+      }
+    &-card{
+        width: 100%;
+        text-align: center;
+        border-radius: 50%;
+        border-radius: 20px;
         @include flex-center;
         flex-direction: column;
+    
+        &__pic{
+            width:10rem;
+            height:10rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border:  .4rem dotted $c-dark-green;
+            background-color: rgba(196, 196, 196,.7);
+            opacity: 1;
+            padding: .3rem;
+            @include tablet-query{
+            width: 15rem;
+            height: 15rem;
+            }
+            @include laptop-query{
+                width: 19rem;
+                height: 19rem;
+                }
+           
+        }
+    }
+    &-info{
         width: 100%;
-        @include font-family-normal;
+         
+      & h2{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.0913rem;
+        color: #4b3f6b;
+        @include laptop-query{
+          font-size: 1.9rem;
+        }
+    
+      }
+      & p{
+        font-size: 1rem;
+        color: $c-deep-red;
+        @include laptop-query{
+          font-size: 1.5rem;
+          font-size: 1.2rem;
+          line-height: 2.6rem;
+        }
+      }
+    }
+    &-social{
+      width: 100%;
+      @include flex-end;
+      margin-top:3rem ;
+      @include laptop-query{
+        justify-content: center;
+      }
+      @include laptop-l-query{
+        margin-top:7rem ;
+        justify-content: flex-end;
+        z-index: 1;
+      }
+     
+    
+    &__link{
+      margin: 1rem;
+      color:#fff;
+      text-decoration: none;
+      @include laptop-query{
+        color: #4B3F6B;
+      }
+      @include laptop-l-query{
+        color: white
+      }
+    }
+    }
+    
+}  
+.about{
+    @include font-family-normal;
+    padding: $p-base;
+    height: 50vh;
+    @include laptop-query{
+        margin-top: 17rem;
+        width: 60%;
+    }
+    &-card{
         width: 100%;
-        margin: 0 auto;
-        &__btnCard{
-            width: 90%;
-            padding-top:$p-base*3 ;
+        margin:  0 auto;
+        & h2{
+            color: $c-dark-green;
+            font-size: 3rem;
+            margin: 0 auto;
+            text-align: center;
+            @include laptop-query{
+                padding: 1rem;
+                text-align: start;
+
+            }
+      }
+        &__body{
             @include flex-center;
             flex-direction: column;
-            margin: 0 auto;
-            &__btn{
+            color: #4B3F6B;
+            @include laptop-query{
+                    flex-direction: row;
+                    align-items: flex-start;
+            }
+            & p{
+                letter-spacing: 0.0112rem;
+                line-height: 26px;
+                font-size: 15px;
+                font-size: 0.91rem;
+                font-weight:$fw-normal;
+                color: #4B3F6B;
+                padding: 1rem;
+                
+                @include laptop-query{
+                    width: 50%;
+                }
+        
+            }
+          
+        }
+        &__sig{
+            @include flex-center;
+            flex-direction: column;
+            @include font-family-passion;
+            padding: 0;
+            text-align: center;
+            @include laptop-query{
+                width: 70%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+           & p{
+            color: $c-deep-red;
+            padding-bottom:$p-base ;
+           } 
+           & button{
             color: $c-white;
-            background-color: $c-dark-green;
+            background-color:#4B3F6B;
             padding: .91rem;
             border: none;
             border-radius: 7px;
             font-size: 15px;
-            text-transform: uppercase;
             &:hover{
-            background-color: $c-sim-black;
+            background-color: $c-dark-green;
             color: $c-bright-gray;
             font-weight: $fw-black;
-            }
-            }
-        }
-        &__signture{
-            @include font-family-passion;
-            padding: 0;
-            margin: 0;
-            &__text{
-                @include font-family-passion;
-                padding: 0;
-                margin: 0;
-                color:$c-dark-green;
-                font-weight:100;
-                padding-left: $p-base*2;
-            }
-        }
-        &__card{
-            @include flex-center;
-            flex-direction: column;
-            &__title{
-                font-size: 3.7rem;;
-                color: $c-dark-green;
-                text-align: center;
-                margin: 0 auto;
-            }
-            &__content{
-                @include flex-center;
-                flex-direction: column;
-                @include tablet-query{
-                padding: 2rem;
-                }
-                @include laptop-query{
-                    padding: 5rem;
-                    flex-direction: row;
-                }
-            &__body{
-                letter-spacing: .0112rem;
-                line-height: 30px;
-                font-size:15px;
-                padding: $p-base;
-                font-size: 0.91rem;
-                font-weight:$fw-normal;
-                color:$c-sim-black;
-                @include laptop-query{
-                    width: 50%;
-                    height: 19rem;
+            text-transform: uppercase;
 
-                }
+            }
             }
         }
-     }
-}
-}
-.main__dark{
-    padding: $p-base;
-    background-color: $c-banana-sim-black;
-    height: 100%;
-    
-    @include tablet-query{
-    display: flex;
-
     }
-  
-    &__container{
-        color: $c-bright-gray;
+}
+.main-dark{
+    width: 100%;
+    height:72rem;
+    display: flex;
+    flex-direction:column;
+    background-color:#D6D6D6;
+    @include tablet-query{
+        height: 60rem;
+    }
+    @include laptop-query{
+        align-items: center;
+        flex-direction: row-reverse;
+        height:100vh;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            background-image: url("../images/bg-boost-desktop.svg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+        }
+    }
+}
+.profile-dark{
+    max-width: 100%;
+    height:50vh;
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    color: $c-white;
+    @include flex-center;
+    @include font-family-normal;
+    flex-direction: column;
+    @include laptop-query{
+    background-image: none;
+    width: 40%;
+    z-index: 1;
+
+      }
+    &__card{
+        width: 100%;
+        text-align: center;
+        border-radius: 50%;
+        border-radius: 20px;
         @include flex-center;
         flex-direction: column;
+    
+        &-pic{
+            width:10rem;
+            height:10rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border:  .4rem dotted #4b3f6b;
+            background-color: rgba(196, 196, 196,.7);
+            opacity: 1;
+            padding: .3rem;
+            @include tablet-query{
+            width: 15rem;
+            height: 15rem;
+            }
+        }
+    }
+    &__info{
         width: 100%;
-        @include font-family-normal;
-        width: 100%;
-        margin: 0 auto;
+         
+      & h2{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.0913rem;
+        color: #4b3f6b;
         @include laptop-query{
-            @include flex-center;
-            
-        
-            }
-        &__btnCard{
-            width: 90%;
-            padding-top:$p-base*2 ;
-            @include flex-center;
-            flex-direction: column;
+          font-size: 1.9rem;
+        }
+    
+      }
+      & p{
+        font-size: 1rem;
+        color: red;
+        @include laptop-query{
+          font-size: 1.5rem;
+          font-size: 1.2rem;
+          line-height: 2.6rem;
+        }
+      }
+    }
+    &-social{
+      width: 100%;
+      @include flex-end;
+      margin-top:3rem ;
+      @include laptop-query{
+        justify-content: center;
+      }
+     
+    
+    &__link{
+      margin: 1rem;
+      color:#fff;
+      text-decoration: none;
+      @include laptop-query{
+        color: #4B3F6B;
+      }
+    }
+    }
+    
+}  
+.about-dark{
+    @include font-family-normal;
+    padding: $p-base;
+    height: 50vh;
+    @include laptop-query{
+        margin-top: 17rem;
+        width: 60%;
+    }
+    &__card{
+        width: 100%;
+        margin:  0 auto;
+        & h2{
+            color: #4B3F6B;
+            font-size: 3rem;
             margin: 0 auto;
-            &__btn{
-                color: $c-white;
-                background-color: $c-dark-green;
-                padding: .91rem;
-                border: none;
-                border-radius: 7px;
-                font-size: 15px;
-                text-transform: uppercase;
-                &:hover{
-                background-color: $c-sim-black;
-                color: $c-bright-gray;
-                font-weight: $fw-black;
-                }
-            &:hover{
-            background-color: $c-sim-black;
-            color: $c-bright-gray;
-            font-weight: $fw-black;
+            text-align: center;
+            @include laptop-query{
+                padding: 1rem;
+                text-align: start;
+
             }
-            }
-        }
-        &__signture{
-            @include font-family-passion;
-            padding: 0;
-            margin: 0;
-            &__text{
-                @include font-family-passion;
-                padding: 0;
-                margin: 0;
-                color:$c-dark-green;
-                font-weight:100;
-                padding-left: $p-base*2;
-            }
-        }
-        &__card{
+      }
+        &-body{
             @include flex-center;
             flex-direction: column;
-            &__title{
-                font-size: 2.7rem;;
-                color:$c-dark-moderate-cyan;
-                text-align: center;
-                margin: 0 auto;
-                @include laptop-query{
-                    font-size: 3.7rem;;
-
-                }
-            }
-            &__content{
-                @include flex-center;
-                flex-direction: column;
-                @include tablet-query{
-                padding: 2rem;
-                }
-                @include laptop-query{
-                    padding: 5rem;
+            color: #4B3F6B;
+            @include laptop-query{
                     flex-direction: row;
-                }
-            &__body{
-                letter-spacing: .0112rem;
-                line-height: 30px;
-                font-size:15px;
-                padding: $p-base;
+                    align-items: flex-start;
+            }
+            & p{
+                letter-spacing: 0.0112rem;
+                line-height: 26px;
+                font-size: 15px;
                 font-size: 0.91rem;
                 font-weight:$fw-normal;
-                color:$c-grayish-blue;
+                color: #4B3F6B;
+                padding: 1rem;
+                
+                @include laptop-query{
+                    width: 50%;
+                }
+        
             }
-        }
-     }
-}
-}
-// .main__dark{
-//     padding: $p-base;
-//     background-color: $c-banana-sim-black;
-//     height: 100vh;
-//     @include tablet-query{
-
-
-//     }
-//         &__container{
-//             color: $c-bright-gray;
-//             @include font-family-normal;
-//             width: 100%;
-//             margin: 0 auto;
-//             &__btnCard{
-//                 width: 90%;
-//                 padding-top:$p-base*2 ;
-//                 @include flex-center;
-//                 flex-direction: column;
-//                 margin: 0 auto;
-//                 &__btn{
-//                 color: $c-white;
-//                 background-color: $c-dark-green;
-//                 padding: .91rem;
-//                 border: none;
-//                 border-radius: 7px;
-//                 font-size: 15px;
-//                 text-transform: uppercase;
-//                 &:hover{
-//                 background-color: $c-sim-black;
-//                 color: $c-bright-gray;
-//                 font-weight: $fw-black;
-//                 }
-//                 }
-//             }
-//             &__signture{
-//                 @include font-family-passion;
-//                 padding: 0;
-//                 margin: 0;
-//                 &__text{
-//                     @include font-family-passion;
-//                     padding: 0;
-//                     margin: 0;
-//                     color:$c-dark-green;
-//                     font-weight:100;
-//                     padding-left: $p-base*2;
-//                 }
-//             }
-//             &__card{
-//                 @include flex-center;
-//                 flex-direction: column;
-//                 &__title{
-//                     font-size: 4rem;
-//                     color:$c-white;
-//                     text-align: center;
-//                     margin: 0 auto;
-//                 }
-//                 &__content{
-//                 @include flex-center;
-//                 flex-direction: column;
-//                 color: $c-white;
-//                 &__body{
-//                     letter-spacing: .0112rem;
-//                     line-height: 30px;
-//                     font-size:15px;
-//                     padding: $p-base;
-//                     font-size: 0.91rem;
-//                     font-weight:$fw-normal;
-//                     color:$c-grayish-blue;
-//                 }
-//             }
-//          }
-//     }
-//     }
-
-.footer__iconLinks{
-    padding-top:1rem ;
-    @include tablet-query{
-    width:8rem;
-    }
-    &__list{
-        width: 100%;
-        height: 100%;
-        list-style: none;
-        padding: 0;
-        @include flex-center;
-        margin-top: 1rem;
-        @include tablet-query{
-            flex-direction: row;
-            @include flex-end;
-        }
-        &__item{
-            // letter-spacing: .04rem;
-            &:hover{
-                color: $c-dark-green;
-            }
-          @include tablet-query{
-            padding:$p-base*.5 0;
-
-            
-            }
-         }
-         &__linkedIcon{
-          width: 60px;
-          height: 31px;
-          color:$c-dark-green;
           
-         }
-         &__twitter{
-          width: 60px;
-          height: 31px;
-          color:$c-dark-green;
+        }
+        &-sig{
+            @include flex-center;
+            flex-direction: column;
+            @include font-family-passion;
+            padding: 0;
+            text-align: center;
+            @include laptop-query{
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+           & p{
+            color: $c-deep-red;
+            padding-bottom:$p-base ;
+           } 
+           & button{
+            color: $c-white;
+            background-color:#4B3F6B;
+            padding: .91rem;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            &:hover{
+            background-color: $c-dark-green;
+            color: $c-bright-gray;
+            font-weight: $fw-black;
+            text-transform: uppercase;
 
-         }
-         &__instagramIcon{
-          width: 40px;
-          height: 17px;
-          color:$c-dark-green;
-
-         }
+            }
+            }
+        }
     }
 }
-
-.footer__iconLinks__list__twitter__dark{
-    width: 60px;
-    height: 31px;
-    color:$c-dark-moderate-cyan;
-}
-.footer__iconLinks__list__linkedIcon__dark{
-    width: 60px;
-    height: 31px;
-    color:$c-dark-moderate-cyan;
-}
-
-.main__container__btnCard__btn__dark{
-    color: $c-white;
-    background-color: #68c984;
-    padding: .91rem;
-    border: none;
-    border-radius: 7px;
-    font-size: 15px;
-    text-transform: uppercase;
-    &:hover{
-    background-color: $c-sim-black;
-    color: $c-bright-gray;
-    font-weight: $fw-black;
-
-}
-}
-.main__container__signture__text__dark{
-    @include font-family-passion;
-    padding: 0;
-    margin: 0;
-    color:$c-dark-moderate-cyan;
-    font-weight:100;
-    padding-left: $p-base*2;
-}
-

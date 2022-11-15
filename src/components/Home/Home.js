@@ -1,8 +1,8 @@
 import React, { useState} from "react";
-import Hero from "../Hero/hero";
+// import Hero from "../Hero/hero";
 import classes from "../Home/Home.module.scss"
-import Logo from "../images/logo.jpg";
-import LogoDark from "../images/logoDark.jpg";
+// import Logo from "../images/logo.jpg";
+// import LogoDark from "../images/logoDark.jpg";
 import { useTheme, useThemeUpdate } from "../ThemeContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -45,10 +45,10 @@ function Home() {
                           <FontAwesomeIcon className={isDarkTheme ? classes.FontAwesomeIconSun__dark:classes.FontAwesomeIconSun}  icon={faSun}  />
                            <FontAwesomeIcon className={isDarkTheme ? classes.FontAwesomeIconMoon__dark:classes.FontAwesomeIconMoon} icon={faMoon} />                     
                         </label> 
-                
+{/*                 
                     <a className={classes.header__toggle__home__link} href="#home">
                         <img className={ classes.header__toggle__logo} src={ isDarkTheme ? LogoDark :Logo} alt="log img"/>
-                    </a>
+                    </a> */}
                 </div>
                 <nav className={isDarkTheme ? classes.nav__dark :classes.nav}>
                     <ul className= {menuOpen && isDarkTheme ? classes.navToggle__active__dark  :menuOpen  && !isDarkTheme  ?classes.navToggle__active :isDarkTheme && !menuOpen ? classes.nav__dark__list :classes.nav__list  }>

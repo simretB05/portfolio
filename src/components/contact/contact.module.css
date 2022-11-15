@@ -83,7 +83,7 @@ body {
 }
 
 .content__dark {
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 0 0;
   min-height: 100%;
   background-color: #0e0e0e;
 }
@@ -105,7 +105,7 @@ body {
   margin: 0;
   text-align: center;
   font-size: 2.7rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
   width: 80%;
   margin: 0 auto;
 }
@@ -159,7 +159,7 @@ body {
   margin: 0;
   text-align: center;
   font-size: 2.7rem;
-  color: #5adf7d;
+  color: hsl(0deg, 0%, 83.92%);
   width: 80%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -233,15 +233,15 @@ body {
   padding: 0;
   text-transform: capitalize;
   border: none;
-  background-color: hsl(265.71deg, 36.21%, 45.49%);
+  background-color: hsl(256.36deg, 25.88%, 33.33%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
   padding: 0.6rem 0.6rem;
 }
 .form__submit__btn:hover {
   background-color: hsl(0deg, 0%, 100%);
-  border: 2px solid rgb(242, 233, 0);
-  color: rgb(242, 233, 0);
+  border: 2px solid hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(357.84deg, 88.99%, 42.75%);
 }
 
 .form__dark {
@@ -288,15 +288,15 @@ body {
   padding: 0;
   text-transform: capitalize;
   border: none;
-  background-color: hsl(167deg, 40%, 24%);
+  background-color: hsl(0deg, 0%, 85.1%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
   padding: 0.6rem 0.6rem;
 }
 .form__dark__submit__btn:hover {
   background-color: hsl(0deg, 0%, 100%);
-  border: 2px solid rgb(242, 233, 0);
-  color: rgb(242, 233, 0);
+  border: 2px solid hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(357.84deg, 88.99%, 42.75%);
 }
 
 .address {
@@ -306,7 +306,7 @@ body {
 }
 .address__title {
   font-size: 1.5rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
 }
 .address__list {
   padding: 0;
@@ -348,7 +348,7 @@ body {
   justify-content: center;
   margin: 1rem;
   height: 29px;
-  background-color: hsl(265.71deg, 36.21%, 45.49%);
+  background-color: hsl(256.36deg, 25.88%, 33.33%);
 }
 .address__list__item__copy {
   font-size: 0.91rem;
@@ -377,7 +377,7 @@ body {
 }
 .address__dark__title {
   font-size: 1.5rem;
-  color: #5adf7d;
+  color: hsl(0deg, 0%, 83.92%);
 }
 .address__dark__list {
   padding: 0;
@@ -397,7 +397,7 @@ body {
   justify-content: center;
   margin: 1rem;
   height: 29px;
-  background-color: hsl(167deg, 40%, 24%);
+  background-color: hsl(0deg, 0%, 85.1%);
 }
 .address__dark__list__item__copy {
   font-size: 0.91rem;
@@ -429,7 +429,7 @@ body {
 }
 .location__title {
   text-align: center;
-  color: rgb(242, 233, 0);
+  color: hsl(357.84deg, 88.99%, 42.75%);
 }
 .location__card {
   width: 100%;

@@ -83,7 +83,7 @@ body {
 }
 
 .content__dark {
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 0 0;
   min-height: 100%;
   background-color: #0e0e0e;
 }
@@ -104,7 +104,7 @@ body {
 }
 .container__title {
   font-size: 2.7rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
   text-align: center;
   text-transform: capitalize;
   padding: 1rem;
@@ -198,7 +198,7 @@ body {
 }
 .container__card__item__details__btn {
   color: hsl(0deg, 0%, 100%);
-  background: hsl(265.71deg, 36.21%, 45.49%);
+  background: hsl(256.36deg, 25.88%, 33.33%);
   padding: 10px 20px;
   width: 120px;
   border-radius: 5px;
@@ -211,7 +211,7 @@ body {
 }
 .container__card__item__details__btn:hover {
   border: 1px solid hsl(0deg, 0%, 100%);
-  background-color: #5adf7d;
+  background-color: hsl(0deg, 0%, 83.92%);
 }
 
 .container__card__item:hover .container__card__item__details {
@@ -234,7 +234,7 @@ body {
 }
 .container__dark__title {
   font-size: 2.7rem;
-  color: #5adf7d;
+  color: hsl(0deg, 0%, 83.92%);
   text-align: center;
   text-transform: capitalize;
   padding: 1rem;
@@ -326,7 +326,7 @@ body {
 }
 .container__dark__card__item__details__btn {
   color: #1f3d47;
-  background: #5adf7d;
+  background: hsl(0deg, 0%, 83.92%);
   color: hsl(0deg, 0%, 100%);
   padding: 10px 20px;
   width: 120px;
@@ -340,7 +340,7 @@ body {
 }
 .container__dark__card__item__details__btn:hover {
   border: 1px solid hsl(0deg, 0%, 100%);
-  background-color: hsl(265.71deg, 36.21%, 45.49%);
+  background-color: hsl(256.36deg, 25.88%, 33.33%);
 }
 
 .container__dark__card__item:hover .container__dark__card__item__details {

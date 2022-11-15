@@ -83,7 +83,7 @@ body {
 }
 
 .content__dark {
-  padding: 5rem 0 0 0;
+  padding: 4rem 0 0 0;
   min-height: 100%;
   background-color: #0e0e0e;
 }
@@ -118,7 +118,7 @@ body {
 }
 .main__container__card__title {
   font-size: 1.7rem;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
   text-align: center;
   padding: 2rem;
   text-transform: capitalize;
@@ -194,7 +194,7 @@ body {
 }
 .main__dark__container__card__title {
   font-size: 1.7rem;
-  color: #5adf7d;
+  color: hsl(0deg, 0%, 83.92%);
   text-align: center;
   padding: 2rem;
   text-transform: capitalize;
@@ -319,7 +319,7 @@ body {
 .service__card__container__title {
   font-family: "Kumbh Sans";
   text-transform: capitalize;
-  color: hsl(265.71deg, 36.21%, 45.49%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
   text-align: center;
 }
 .service__card__container__title:hover {
@@ -354,7 +354,7 @@ body {
 .service__card__dark__container__title {
   font-family: "Kumbh Sans";
   text-transform: capitalize;
-  color: #5adf7d;
+  color: hsl(0deg, 0%, 83.92%);
   text-align: center;
 }
 .service__card__dark__container__body {
@@ -407,7 +407,7 @@ body {
   content: "";
   height: 100%;
   width: 4px;
-  background: #5adf7d;
+  background: hsl(0deg, 0%, 83.92%);
   position: absolute;
   right: calc(100% + 3rem);
   top: 0.8rem;
