@@ -5,7 +5,7 @@ import Contact from "./components/contact/contact";
 import Home from "./components/Home/Home";
 import { ThemeProvider } from "./components/ThemeContext";
 import Projects from "./components/projects/projects";
-// import Skills from "./components/Skills/Skills";
+import Skills from "./components/Skills/Skills";
 
 
 
@@ -18,8 +18,8 @@ function App() {
       <Home />
       <About />
       {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <Contact /> */}
+      <Projects />
+      <Contact />
     </ThemeProvider>
 
   );

@@ -108,7 +108,6 @@ body {
   text-align: center;
   text-transform: capitalize;
   padding: 1rem;
-  margin: 2rem;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
@@ -161,7 +160,7 @@ body {
 .container__card__item__details {
   font-family: "Kumbh Sans";
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   top: 0;
   right: -100%;
   position: absolute;
@@ -234,11 +233,10 @@ body {
 }
 .container__dark__title {
   font-size: 2.7rem;
-  color: hsl(0deg, 0%, 83.92%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
   text-align: center;
   text-transform: capitalize;
   padding: 1rem;
-  margin: 2rem;
 }
 @media screen and (min-width: 768px) {
   .container__dark__title {
@@ -255,7 +253,7 @@ body {
   text-transform: none;
   font-size: 0.91rem;
   font-weight: 300;
-  color: hsl(210deg, 4%, 67%);
+  color: rgb(110, 108, 108);
 }
 @media screen and (min-width: 1440px) {
   .container__dark__titleText {
@@ -278,6 +276,10 @@ body {
   overflow: hidden;
   border: 8px solid #0e0e0e;
   position: relative;
+  filter: grayscale(100%);
+}
+.container__dark__card__item:hover {
+  filter: grayscale(0%);
 }
 .container__dark__card__item__img {
   width: 100%;
@@ -285,6 +287,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  opacity: 0.5;
 }
 .container__dark__card__item__details {
   font-family: "Kumbh Sans";
@@ -326,7 +329,7 @@ body {
 }
 .container__dark__card__item__details__btn {
   color: #1f3d47;
-  background: hsl(0deg, 0%, 83.92%);
+  background: hsl(256.36deg, 25.88%, 33.33%);
   color: hsl(0deg, 0%, 100%);
   padding: 10px 20px;
   width: 120px;
@@ -337,9 +340,11 @@ body {
   font-weight: 500;
   cursor: pointer;
   margin: 1rem;
+  filter: grayscale(0%);
 }
 .container__dark__card__item__details__btn:hover {
   border: 1px solid hsl(0deg, 0%, 100%);
+  opacity: 1;
   background-color: hsl(256.36deg, 25.88%, 33.33%);
 }
 

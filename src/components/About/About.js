@@ -28,9 +28,9 @@ function About() {
                         />
                     </p>
                     </div>
-                    <div className={classes['profile-social']} >
-                        <a href="https://www.linkedin.com/in/sim-paulos-2394a5246/"  className={classes['profile-social__link']}>< FontAwesomeIcon size='2x'  icon={faLinkedin} className={classes['profile-social__lnkedin']}/></a>
-                        <a href="https://github.com/simretB05/portfolio" className={classes['profile-social__link']}><FontAwesomeIcon size='2x'   icon={faGithub}  className={classes['profile-social__ghub']}/></a>
+                    <div className={isDarkTheme?classes['profile-dark__social']:classes['profile-social']} >
+                        <a href="https://www.linkedin.com/in/sim-paulos-2394a5246/"  className={isDarkTheme?classes['profile-dark__social-link']:classes['profile-social__link']}>< FontAwesomeIcon size='2x'  icon={faLinkedin} className={classes['profile-social__lnkedin']}/></a>
+                        <a href="https://github.com/simretB05/portfolio"  className={isDarkTheme?classes['profile-dark__social-link']:classes['profile-social__link']}><FontAwesomeIcon size='2x'   icon={faGithub}  className={classes['profile-social__ghub']}/></a>
                     </div>
                 </div>
                 <div className={isDarkTheme?classes['about-dark']:classes['about']}>
@@ -43,7 +43,7 @@ function About() {
                     </div> 
                     <div className={isDarkTheme?classes['about-dark__card-sig']:classes['about-card__sig']}>
                         <p >Simret Paulos</p>
-                        <button > Click here for my Resume</button>
+                        <button > Get my Resume</button>
 
                     </div> 
                      
