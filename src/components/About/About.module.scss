@@ -196,6 +196,10 @@
            & p{
             color: $c-deep-red;
             font-size: 2rem;
+            margin-bottom: $m-base;
+            @include laptop-query{
+              margin: 0;
+            }
 
            } 
            & button{
@@ -402,6 +406,10 @@
            & p{
             color: $c-deep-red;
             font-size: 2rem;
+            margin-bottom: $m-base;
+            @include laptop-query{
+              margin: 0;
+            }
            } 
            & button{
             color: $c-grayish-blue;

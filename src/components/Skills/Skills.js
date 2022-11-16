@@ -14,6 +14,8 @@ function Skills() {
   const isDarkTheme = useTheme();
 
   return (
+    <div  id="projects" className={isDarkTheme ? classes.content__dark:classes.content}>
+
             < div className={isDarkTheme ?classes['main-dark']:classes['main']}>
                 <div className={classes.main__container}>
                   <div className={classes.main__container__card}>
@@ -70,7 +72,8 @@ function Skills() {
           </div> */}
         </div>
         
-            </div>
+      </div>
+      </div>
       
     
         
