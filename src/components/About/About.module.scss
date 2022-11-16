@@ -73,8 +73,8 @@
             height: 15.5rem;
             }
             @include laptop-query{
-                width: 19.5rem;
-                height: 19.5rem;
+                width: 14.5rem;
+                height: 14.5rem;
                 }
            
         }
@@ -109,9 +109,11 @@
       margin-top:3rem ;
       @include laptop-query{
         justify-content: center;
+        margin-top:1rem ;
+
       }
       @include laptop-l-query{
-        margin-top:7rem ;
+        margin-top:1rem ;
         justify-content: flex-end;
         z-index: 1;
       }
@@ -136,7 +138,7 @@
     padding: $p-base;
     height: 50vh;
     @include laptop-query{
-        margin-top: 17rem;
+        margin-top: 13rem;
         width: 60%;
     }
     &-card{
@@ -282,8 +284,8 @@
             height: 15.5rem;
             }
             @include laptop-query{
-                width: 19.5rem;
-                height: 19.5rem;
+                width: 14.5rem;
+                height: 14.5rem;
                 }
         }
     }
@@ -318,6 +320,11 @@
       @include laptop-query{
         justify-content: center;
       }
+      @include laptop-l-query{
+        margin-top:1rem ;
+        justify-content: flex-end;
+        z-index: 1;
+      }
     &-link{
       margin: 1rem;
       color:$c-banana-sim-black;
@@ -337,7 +344,7 @@
     padding: $p-base;
     height: 50vh;
     @include laptop-query{
-        margin-top: 17rem;
+        margin-top: 13rem;
         width: 60%;
     }
     &__card{
