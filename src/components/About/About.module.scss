@@ -2,7 +2,7 @@
 
 .main{
     width: 100%;
-    height:73rem;
+    height:83rem;
     display: flex;
     flex-direction:column;
     background-color: $c-light-gray-back;
@@ -36,14 +36,14 @@
 
 .profile{
     max-width: 100%;
-    height:77vh;
+    height:35rem;
     background-image: url(../images/bg-boost-mobile.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem;
     color: $c-white;
-    @include flex-center;
+    @include flex-start;
     @include font-family-normal;
     flex-direction: column;
     z-index: 5;
@@ -86,7 +86,7 @@
         flex-direction: column;
          
       & h2{
-        margin-top: 1rem;
+        margin-top: 2rem;
         font-size: 1.4rem;
         line-height: 1.9rem;
         letter-spacing: 0.0913rem;
@@ -124,13 +124,18 @@
     
     &__link{
       margin: 1rem;
-      color:#fff;
+      color:$c-dark-green;
       text-decoration: none;
+      @include tablet-query{
+        color:$c-white;
+
+      }
       @include laptop-query{
-        color: #4B3F6B;
+        color:$c-dark-green;
       }
       @include laptop-l-query{
-        color: white
+        color:$c-white;
+
       }
     }
     }

@@ -1,8 +1,5 @@
 import React, { useState} from "react";
-// import Hero from "../Hero/hero";
 import classes from "../Home/Home.module.scss"
-// import Logo from "../images/logo.jpg";
-// import LogoDark from "../images/logoDark.jpg";
 import { useTheme, useThemeUpdate } from "../ThemeContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -17,8 +14,10 @@ import { Link } from 'react-scroll'
 
 function Home() {
 
+    const [modalOpen, setModalOpen]=useState(false)
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const open =()=>setModalOpen(true)
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p);
     };

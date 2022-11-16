@@ -5,10 +5,10 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useTheme, useThemeUpdate } from "../ThemeContext"
 import hero from "../images/hero.jpg"
 var ReactRotatingText = require("react-rotating-text");
-
 function About() {
     const isDarkTheme = useTheme();
     return (
+
         <div id="about" className={ classes.content}>
             <div className={isDarkTheme?classes['main-dark']:classes['main']}>
                 <div className={isDarkTheme?classes['profile-dark']:classes['profile']}>
