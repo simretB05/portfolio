@@ -81,13 +81,15 @@
     }
     &-info{
         width: 100%;
+        @include flex-center;
+        flex-direction: column;
          
       & h2{
         margin-top: 1rem;
         font-size: 1.4rem;
         line-height: 1.9rem;
         letter-spacing: 0.0913rem;
-        color: #4b3f6b;
+        color: $c-dark-green;
         @include laptop-query{
           font-size: 1.9rem;
         }
@@ -109,11 +111,11 @@
       margin-top:3rem ;
       @include laptop-query{
         justify-content: center;
-        margin-top:1rem ;
+        margin-top:5rem ;
 
       }
       @include laptop-l-query{
-        margin-top:1rem ;
+        margin-top:13rem ;
         justify-content: flex-end;
         z-index: 1;
       }
@@ -291,7 +293,8 @@
     }
     &__info{
         width: 100%;
-         
+        @include flex-center;
+        flex-direction: column;
       & h2{
         margin-top: 1rem;
         font-size: 1.4rem;
@@ -321,7 +324,7 @@
         justify-content: center;
       }
       @include laptop-l-query{
-        margin-top:1rem ;
+        margin-top:13rem ;
         justify-content: flex-end;
         z-index: 1;
       }

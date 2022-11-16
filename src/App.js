@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider>
       <Home />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Projects />
       <Contact />
     </ThemeProvider>

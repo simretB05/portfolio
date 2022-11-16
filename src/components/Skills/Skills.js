@@ -14,12 +14,12 @@ function Skills() {
   const isDarkTheme = useTheme();
 
   return (
-            < div className={isDarkTheme ?classes.main__dark:classes.main}>
+            < div className={isDarkTheme ?classes['main-dark']:classes['main']}>
                 <div className={classes.main__container}>
                   <div className={classes.main__container__card}>
                       <h1 className={isDarkTheme ? classes.main__dark__container__card__title:classes.main__container__card__title}> check out my progressing skills</h1>
                   </div>
-                  <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
+                  {/* <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
                   <FontAwesomeIcon icon={faLaptop} className={classes.FontAwesomeIcon} size='2x' />                          <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Web Development</h3>
                                     <div className={ isDarkTheme?classes.skillsGrid__dark:classes.skillsGrid}>
@@ -31,10 +31,10 @@ function Skills() {
                                           <img   className={isDarkTheme?classes.skillsGrid__dark__img:classes.skillsGrid__img} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="The logo icon for Sass" title="Sass"  />
                                           <img   className={isDarkTheme?classes.skillsGrid__dark__img:classes.skillsGrid__img} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="The logo icon for Python" title="Python"  />
 
-                </div> 
-                          </div>
-                  </div>
-                  <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
+                </div>  */}
+                          {/* </div> */}
+                  {/* </div> */}
+                  {/* <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
             <FontAwesomeIcon className={classes.FontAwesomeIcon} size='2x' icon={faCloud} />
             <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Cloud Service</h3>
@@ -44,8 +44,8 @@ function Skills() {
                                    </div> 
                    </div>
                     
-          </div>
-          <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
+          </div> */}
+          {/* <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
           <FontAwesomeIcon  className={classes.FontAwesomeIcon} size='2x' icon={faCompassDrafting} />            <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Design</h3>
                                   <div className={ isDarkTheme?classes.skillsGrid__dark:classes.skillsGrid}>
@@ -54,8 +54,8 @@ function Skills() {
                                    </div> 
                    </div>
                     
-          </div>
-          <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
+          </div> */}
+          {/* <div className={isDarkTheme ?classes.service__card__dark:classes.service__card}>
             <FontAwesomeIcon className={classes.FontAwesomeIcon} size='2x' icon={faDatabase} />
             <div className={classes.service__card__container}>
                             <h3 className={isDarkTheme ? classes.service__card__dark__container__title:classes.service__card__container__title}>Backend Technologies</h3>
@@ -65,9 +65,9 @@ function Skills() {
                                       <img className= { isDarkTheme?classes.skillsGrid__dark__img:classes.skillsGrid__img} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="The logo icon for Mysql" title="Mysql" />
 
                                   </div> 
-                   </div>
+              </div>
                     
-          </div>
+          </div> */}
         </div>
         
             </div>
