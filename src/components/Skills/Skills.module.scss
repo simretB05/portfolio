@@ -1,332 +1,346 @@
+/** @format */
+
 @import "../../styles/styles.scss";
 
-.main{
-    padding: $p-base;
-    background-color:$c-white;
-    height: 100%;
-    @include tablet-query{
-    }
-    @include laptop-query{
-      @include flex-center;
-    }
-    &__container{
-        color: $c-banana-sim-black;
-        @include font-family-normal;
-         width: 100%;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        display: flex;
-    &__card{
-        width: 90%;
-        @include flex-center;
-        flex-direction: column;
-        margin: 0 auto;
-        &__title{
-        font-size: 1.7rem;
-        color: $c-dark-green;
-        text-align: center;
-       padding: 2rem;
-        text-transform:capitalize;
-        @include tablet-query{
-          font-size: 2rem;
+.main {
+	padding: $p-base;
+	background-color: $c-light-gray-back;
+	min-height: 73rem;
+	@include tablet-query {
+		min-height: 44rem;
+	}
+	@include laptop-query {
+		@include flex-center;
+	}
+	&__container {
+		color: $c-banana-sim-black;
+		@include font-family-normal;
+		width: 100%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		display: flex;
+		&__card {
+			width: 90%;
+			@include flex-center;
+			flex-direction: column;
+			margin: 0 auto;
+			@include laptop-query {
+				padding: 4rem;
+			}
+			&__title {
+				font-size: 1.7rem;
+				color: $c-dark-green;
+				text-align: center;
+				padding: 2rem;
+				text-transform: capitalize;
+				@include tablet-query {
+					font-size: 2rem;
+				}
+				@include laptop-query {
+					font-size: 3rem;
+				}
+			}
+		}
+		&__bodyCard {
+			margin-bottom: 5rem;
+			@include flex-center;
 
-        }
-        @include laptop-query{
-          font-size: 3rem;
+			&__body {
+				letter-spacing: 0.0112rem;
+				line-height: 26px;
+				font-size: 15px;
+				font-size: 0.91rem;
+				font-weight: $fw-normal;
+				color: $c-sim-black;
+				text-align: center;
+				@include laptop-l-query {
+					width: 60%;
+				}
+			}
+		}
+		&__content {
+			width: 90%;
+			height: 90%;
 
-        }
-        
-        }
-    
-    }
-    &__bodyCard{
-        margin-bottom: 5rem;
-        @include flex-center;
-
-        &__body{
-            letter-spacing: 0.0112rem;
-            line-height: 26px;
-            font-size: 15px;
-            font-size: 0.91rem;
-            font-weight:$fw-normal;
-            color:$c-sim-black;
-            text-align: center;
-            @include laptop-l-query{
-              width: 60%;
-            }
-        }
-    }
-    &__content{
-    width: 90%;
-    height: 90%;
-    
-    &__card{
-        margin: $m-base;
-        width: 100%;
-        height: 300px;
-        border: 1px solid $c-soft-red;
-    }
-    
-    }
+			&__card {
+				margin: $m-base;
+				width: 100%;
+				height: 300px;
+				border: 1px solid $c-soft-red;
+			}
+		}
+	}
 }
+
+.main__dark {
+	padding: $p-base;
+	background-color: #191919;
+	min-height: 78rem;
+	@include tablet-query {
+		min-height: 44rem;
+	}
+	@include laptop-query {
+		@include flex-center;
+	}
+	&__container {
+		color: $c-banana-sim-black;
+		@include font-family-normal;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		&__card {
+			width: 90%;
+			@include flex-center;
+			flex-direction: column;
+			margin: 0 auto;
+			@include laptop-query {
+				padding: 4rem;
+			}
+			&__title {
+				font-size: 1.7rem;
+				color: $c-dark-green;
+				text-align: center;
+				padding: 2rem;
+				text-transform: capitalize;
+				@include tablet-query {
+					font-size: 2rem;
+				}
+				@include laptop-query {
+					font-size: 3rem;
+				}
+			}
+		}
+		&__bodyCard {
+			margin-bottom: 5rem;
+			@include flex-center;
+
+			&__body {
+				letter-spacing: 0.0112rem;
+				line-height: 26px;
+				font-size: 15px;
+				font-size: 0.91rem;
+				font-weight: $fw-normal;
+				color: $c-sim-black;
+				text-align: center;
+				@include laptop-l-query {
+					width: 60%;
+				}
+			}
+		}
+		&__content {
+			width: 90%;
+			height: 90%;
+
+			&__card {
+				margin: $m-base;
+				width: 100%;
+				height: 300px;
+				border: 1px solid $c-soft-red;
+			}
+		}
+	}
+}
+.service__container {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include tablet-query {
+	}
 }
 
-.main__dark{
-    padding: $p-base;
-    background-color:$c-banana-sim-black;
-    height: 100%;
-    @include tablet-query{
-    }
-    @include laptop-query{
-      @include flex-center;
-    }
-    &__container{
-        color: $c-banana-sim-black;
-        @include font-family-normal;
-         width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-    &__card{
-        width: 90%;
-        @include flex-center;
-        flex-direction: column;
-        margin: 0 auto;
-        &__title{
-        font-size: 1.7rem;
-        color: $c-dark-green;
-        text-align: center;
-       padding: 2rem;
-        text-transform:capitalize;
-        @include tablet-query{
-          font-size: 2rem;
+.service__card {
+	width: 100%;
+	padding: 0;
+	margin: 1rem;
+	@include flex-start;
+	height: 21rem;
+	background-color: #c4c4c4;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	// transform: scale(.9);//later
+	&:hover {
+		background-color: #c2afd9;
+	}
 
-        }
-        @include laptop-query{
-          font-size: 3rem;
+	@include tablet-query {
+		flex: 1 0 44%;
+		padding: 0 1rem;
+	}
 
-        }
-        
-        }
-    
-    }
-    &__bodyCard{
-        margin-bottom: 5rem;
-        @include flex-center;
-
-        &__body{
-            letter-spacing: 0.0112rem;
-            line-height: 26px;
-            font-size: 15px;
-            font-size: 0.91rem;
-            font-weight:$fw-normal;
-            color:$c-sim-black;
-            text-align: center;
-            @include laptop-l-query{
-              width: 60%;
-            }
-        }
-    }
-    &__content{
-    width: 90%;
-    height: 90%;
-    
-    &__card{
-        margin: $m-base;
-        width: 100%;
-        height: 300px;
-        border: 1px solid $c-soft-red;
-    }
-    
-    }
+	@include laptop-l-query {
+		flex: 1 0 22%;
+		height: 18rem;
+	}
 }
+
+.service__card__dark {
+	width: 100%;
+	padding: 0;
+	@include flex-start;
+	height: 21rem;
+	background-color: #161515;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	// transform: scale(.9);//later
+	&:hover {
+		background-color: #2c613a;
+	}
+
+	@include tablet-query {
+		flex: 1 0 44%;
+		padding: 0 1rem;
+	}
+
+	@include laptop-l-query {
+		flex: 1 0 22%;
+		height: 18rem;
+	}
 }
-.service__container{
-    display: flex;
-    flex-wrap: wrap;
 
-    @include tablet-query{
-
-    }
-  }
-  
-  .service__card{
-    width: 100%;
-    padding: 0;
-    margin: 1rem;
-    @include flex-start;
-    height: 15rem;
-    background-color:#c4c4c4;
-    border-radius: .5rem;
-    margin-top: 1rem;
-    // transform: scale(.9);//later
-    &:hover{
-      background-color: #c2afd9;
-          }
-  
-    @include tablet-query{
-        flex: 1 0 44%;
-        padding: 0 1rem;
-    }
-  
-  
-  @include laptop-l-query{
-    flex: 1 0 22%;
-    height: 18rem;
- 
+.FontAwesomeIcon {
+	color: $c-dark-green;
+	padding: $p-base;
 }
-  }
 
-  .service__card__dark{
-    width: 100%;
-    padding: 0;
-    @include flex-start;
-    height: 15rem;
-    background-color: #161515;
-    margin: 1rem;
-    border-radius: .5rem;
-    // transform: scale(.9);//later
-    &:hover{
-background-color: #2c613a;
-    }
-  
-    @include tablet-query{
-        flex: 1 0 44%;
-        padding: 0 1rem;
-    }
+.service__card__container {
+	@include flex-start;
+	flex-direction: column;
+	margin: 1rem;
 
-  
-  @include laptop-l-query{
-    flex: 1 0 22%;
-    height: 18rem;
- 
+	&__icons {
+		@include flex-center;
+	}
+	&__title {
+		@include font-family-normal;
+		text-transform: capitalize;
+		color: $c-dark-green;
+		text-align: center;
+		padding: 1rem;
+		&:hover {
+			color: $c-white;
+		}
+	}
+	&__body {
+		@include font-family-normal;
+		width: 100%;
+		letter-spacing: 0.0112rem;
+		line-height: 26px;
+		font-size: 15px;
+		font-size: 0.91rem;
+		font-weight: 300;
+		color: #2f2f2f;
+		&:hover {
+			color: $c-white;
+		}
+	}
 }
-  
+.service__card__dark__container {
+	@include flex-start;
+	flex-direction: column;
+	margin: 1rem;
 
-  }
-  
-  .FontAwesomeIcon{
-    color: $c-dark-green;
-    padding: $p-base
-  }
+	&__icons {
+		@include flex-center;
+	}
+	&__title {
+		@include font-family-normal;
+		text-transform: capitalize;
+		color: $c-dark-green;
+		text-align: center;
+		padding: 1rem;
+	}
+	&__body {
+		@include font-family-normal;
+		width: 100%;
+		letter-spacing: 0.0112rem;
+		line-height: 26px;
+		font-size: 15px;
+		font-size: 0.91rem;
+		font-weight: 300;
+		color: $c-grayish-blue;
+		&:hover {
+			color: $c-white;
+		}
+	}
+}
+// .skillsGrid {
+// 	height: 10rem;
+// 	align-items: center;
+// 	justify-items: center;
+// 	width: 10rem;
+// 	background: #6e4a9e;
+// 	border-radius: 15px;
+// 	position: relative;
 
-  .service__card__container{
-    @include flex-start;
-    flex-direction: column;
-    margin: 1rem;
-    
-    &__icons{
-      @include flex-center;
-     }
-  &__title{
-    @include font-family-normal;
-    text-transform:capitalize;
-    color:$c-dark-green;
-    text-align: center;
-    padding: 1rem;
-    &:hover{
-      color: $c-white;
-          }
-  }
-  &__body{
-      @include font-family-normal;
-      width: 100%;
-      letter-spacing: 0.0112rem;
-      line-height: 26px;
-      font-size: 15px;
-      font-size: 0.91rem;
-      font-weight: 300;
-      color: #2f2f2f;
-      &:hover{
-        color: $c-white;
-            }
-    }
-  }
-  .service__card__dark__container{
-    @include flex-start;
-    flex-direction: column;
-    margin: 1rem;
-   
-    &__icons{
-      @include flex-center;
-     }
-  &__title{
-    @include font-family-normal;
-    text-transform:capitalize;
-    color:$c-dark-green;
-    text-align: center;
-    padding: 1rem;
-  }
-  &__body{
-      @include font-family-normal;
-      width: 100%;
-      letter-spacing: 0.0112rem;
-      line-height: 26px;
-      font-size: 15px;
-      font-size: 0.91rem;
-      font-weight: 300;
-      color:$c-grayish-blue;
-      &:hover{
-        color: $c-white;
-              }
+// 	&::before {
+// 		content: "";
+// 		height: 100%;
+// 		width: 4px;
+// 		background: #6e4a9e;
+// 		position: absolute;
+// 		right: calc(100% + 3rem);
+// 		top: 0.2rem;
 
-    }
-  }
-  .skillsGrid{
-    height: 10rem;
-    align-items: center;
-    justify-items: center;
-    width: 10rem;
-    background: #6e4a9e;
-    border-radius: 15px;
-    position: relative;
+// 		border-radius: 50px;
+// 		opacity: 0.5;
+// 	}
+// }
+.skillsGrid {
+	height: 100%;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	background: $c-grayish-blue;
+	border-radius: 15px;
+	position: relative;
 
-    &::before{
-      content: "";
-    height: 100%;
-    width: 4px;
-    background: #6e4a9e;
-    position: absolute;
-    right: calc(100% + 3rem);
-    top: 0.2rem;
+	&::before {
+		content: "";
+		height: 100%;
+		width: 4px;
+		background: $c-dark-green;
+		position: absolute;
+		right: calc(100% + 3rem);
+		top: 0.8rem;
 
-    border-radius: 50px;
-    opacity: 0.5;
-    }
-  }
-  .skillsGrid__dark{
-    height: 100%;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-    background: $c-grayish-blue;
-    border-radius: 15px;
-    position: relative;
+		border-radius: 50px;
+		opacity: 0.5;
+	}
+}
+.skillsGrid__dark {
+	height: 100%;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	background: $c-grayish-blue;
+	border-radius: 15px;
+	position: relative;
 
-    &::before{
-      content: "";
-    height: 100%;
-    width: 4px;
-    background: $c-dark-moderate-cyan;
-    position: absolute;
-    right: calc(100% + 3rem);
-    top: 0.8rem;
+	&::before {
+		content: "";
+		height: 100%;
+		width: 4px;
+		background: $c-dark-moderate-cyan;
+		position: absolute;
+		right: calc(100% + 3rem);
+		top: 0.8rem;
 
-    border-radius: 50px;
-    opacity: 0.5;
-    }
-  }
-  .skillsGrid__img {
-  height: 65px;
-  width: 45px;
-  color: red;
-  }
-  .skillsGrid__dark__img {
-    height: 65px;
-    width: 45px;
-    }
-  
-  .skillsGrid__amazon{
-    width: 50px;
-    height:78px
-  }
+		border-radius: 50px;
+		opacity: 0.5;
+	}
+}
+.skillsGrid__img {
+	height: 65px;
+	width: 45px;
+	color: red;
+}
+.skillsGrid__dark__img {
+	height: 65px;
+	width: 45px;
+}
+
+.skillsGrid__amazon {
+	width: 50px;
+	height: 78px;
+}

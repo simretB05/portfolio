@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 import classes from '../contact/contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,12 +8,21 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useTheme, } from "../ThemeContext"
 import AddressImag from "../images/profileImg3.jpg"
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-
+import { db } from '../firebase';
+// import { db } from "../firebase"
 
 
 function Contact() {
     const isDarkTheme = useTheme();
+
+    const [name,setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // db.collection('contacts').add
+}
 
     return (
         <div id='contact' className={ isDarkTheme?classes.content__dark: classes.content}>
@@ -63,15 +72,30 @@ function Contact() {
                          </ul>
                     </div>
                 <div className={isDarkTheme? classes.form__container__dark__mainContent:classes.form__container__dark__mainContent}>
-                    <form className={isDarkTheme? classes.form__dark:classes.form}>
+                    <form id="contactForm" 
+                        onSubmit={handleSubmit}
+                        className={isDarkTheme ? classes.form__dark : classes.form}>
                         <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
-                            <input className={isDarkTheme? classes.form__dark__input__text:classes.form__input__text} type="text" required placeholder="Your name" />
+                            <input
+                                id="name"
+                                className={isDarkTheme ? classes.form__dark__input__text : classes.form__input__text}
+                                type="text" required
+                                placeholder="Your name"
+                                value={name}
+                                onChange={(e)=> setName(e.target.value)}
+                            />
                         </div>
                         <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
-                            <input className={ isDarkTheme?classes.form__dark__input__text:classes.form__input__text} type="text" required placeholder="E-mail" />
+                            <input id="email"
+                                className={isDarkTheme ? classes.form__dark__input__text : classes.form__input__text}
+                                type="text" required
+                                placeholder="E-mail"
+                                value={email}
+                                onChange={(e)=>setEmail(e.target.value)}
+                            />
                         </div>
                         <div className={isDarkTheme? classes.form__dark__message__box:classes.form__message__box}>
-                            <textarea className={isDarkTheme? classes.form__dark__input__textArea:classes.form__input__textArea} placeholder=" Your Message" name="textarea" id="" cols="30" rows="10"></textarea>
+                            <textarea id ="message" className={isDarkTheme? classes.form__dark__input__textArea:classes.form__input__textArea} placeholder=" Your Message" name="textarea" id="" cols="30" rows="10"></textarea>
                         </div>
                         <div className={isDarkTheme? classes.form__dark__input__box:classes.form__input__box}>
                             <input className={isDarkTheme? classes.form__dark__submit__btn:classes.form__submit__btn} type="submit" value="Send Message" />
