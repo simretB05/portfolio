@@ -103,9 +103,9 @@ function Projects() {
 							>
 								This is a music band website, an assignment for a boot camp
 								class. The main goal of the project is to interact with React
-								components using ReactHooks to Create a CRUD system. Also,the
-								Project follows good practices for Project Structure with the
-								use of UI Design, HTML, and SCSS.{" "}
+								components using ReactHooks to Create a CRUD system with JSON
+								Server API. Also,the Project follows good practices for Project
+								Structure with the use of UI Design, HTML, and SCSS.{" "}
 							</p>
 							<a href="https://sunny-bonbon-17baef.netlify.app">
 								<button
