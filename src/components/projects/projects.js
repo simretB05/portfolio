@@ -160,9 +160,9 @@ function Projects() {
 								}
 							>
 								Essential oil is a personal project I built to practice handling
-								an E-commerce cart. Apart from implementing JavaScript for
-								adding and deleting to and from a Cart, I tried to imitate other
-								websites by giving the project my UI design touch.
+								an E-commerce cart. I used JavaScript for adding and deleting to
+								and from a Cart. The website design inspiration came from
+								similar essential oil websites but with my own UI design touch.
 							</p>
 							<a href="https://sprightly-cannoli-87a94c.netlify.app">
 								<button

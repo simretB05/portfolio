@@ -19,6 +19,7 @@
 		color: $c-dark-green;
 		width: 80%;
 		margin: 0 auto;
+		padding: 2rem;
 
 		@include laptop-query {
 			margin: 0 auto;
@@ -65,7 +66,7 @@
 		color: $c-dark-green;
 		width: 80%;
 		margin: 0 auto;
-		padding: $p-base * 2 0;
+		padding: $p-base * 2;
 		@include laptop-query {
 			margin: 0 auto;
 		}

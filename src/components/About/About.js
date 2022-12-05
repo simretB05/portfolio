@@ -117,39 +117,55 @@ function About() {
 						<h2> About Me</h2>
 						<div
 							className={
-								isDarkTheme
-									? classes["about-dark__card-body"]
-									: classes["about-card__body"]
+								isDarkTheme ? classes["main-dark__cardp"] : classes["main-card"]
 							}
 						>
-							<p>
-								{" "}
-								In 2021 I started looking into the field of web development. My
-								passion has developed ever since. I dedicated myself to learning
-								and Creating websites that are user-friendly and fun. I have
-								gone through different skill-building boot camps over the last
-								year to become a Full Stack Web Developer. I am a dedicated
-								problem solver, Skilled in analyzing data, detail-oriented, team
-								player, with excellent communication skills.{" "}
-							</p>
-							<p>
-								{" "}
-								Highlights of what I have learned so far include, frontend web
-								development, interactive front end as per the design, React and
-								React Native, Redux for State management, Building REST API,
-								Managing database, and working with groups on Git and Github.{" "}
-							</p>
+							<div
+								className={
+									isDarkTheme
+										? classes["about-dark__card-body"]
+										: classes["about-card__body"]
+								}
+							>
+								<p>
+									{" "}
+									In 2021 I started looking into the field of web development.
+									My passion has developed ever since. I dedicated myself to
+									learning and Creating websites that are user-friendly and fun.
+									I have gone through different skill-building boot camps over
+									the last year to become a Full Stack Web Developer. I am a
+									dedicated problem solver, Skilled in analyzing data,
+									detail-oriented, team player, with excellent communication
+									skills.{" "}
+								</p>
+								<p>
+									{" "}
+									Highlights of what I have learned so far include, frontend web
+									development, interactive front end as per the design, React
+									and React Native, Redux for State management, Building REST
+									API, Managing database, and working with groups on Git and
+									Github.{" "}
+								</p>
+							</div>
+							<div
+								className={
+									isDarkTheme
+										? classes["about-dark__card-sig"]
+										: classes["about-card-sig"]
+								}
+							>
+								<p
+									className={
+										isDarkTheme
+											? classes["about-dark__card__sig__title"]
+											: classes["about-card__sig__title"]
+									}
+								>
+									Simret Paulos
+								</p>
+							</div>
+							<button> Get my Resume</button>
 						</div>
-					</div>
-					<div
-						className={
-							isDarkTheme
-								? classes["about-dark__card-sig"]
-								: classes["about-card__sig"]
-						}
-					>
-						<p>Simret Paulos</p>
-						<button> Get my Resume</button>
 					</div>
 				</div>
 			</div>

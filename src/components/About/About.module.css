@@ -1,4 +1,4 @@
-/***********************
+/** @format */ /***********************
 * COLORS
 ************************/
 @import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
@@ -90,20 +90,20 @@ body {
 
 .main {
   width: 100%;
-  height: 83rem;
+  min-height: 78rem;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .main {
-    height: 60rem;
+    min-height: 44rem;
   }
 }
 @media screen and (min-width: 1020px) {
   .main {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row-reverse;
-    height: 100vh;
+    min-height: 100vh;
   }
   .main::before {
     content: "";
@@ -259,6 +259,16 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 1020px) {
+  .about-card {
+    margin: 4rem auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-card {
+    margin: 8rem auto;
+  }
+}
 .about-card h2 {
   color: hsl(256.36deg, 25.88%, 33.33%);
   font-size: 3rem;
@@ -276,7 +286,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #4B3F6B;
+  color: #4b3f6b;
 }
 @media screen and (min-width: 1020px) {
   .about-card__body {
@@ -298,7 +308,7 @@ body {
     width: 50%;
   }
 }
-.about-card__sig {
+.about-card-sig {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,48 +321,59 @@ body {
   text-align: center;
 }
 @media screen and (min-width: 1020px) {
-  .about-card__sig {
+  .about-card-sig {
     width: 50%;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
   }
 }
-.about-card__sig p {
+.about-card-sig-sig__title {
   color: hsl(357.84deg, 88.99%, 42.75%);
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 @media screen and (min-width: 1020px) {
-  .about-card__sig p {
+  .about-card-sig-sig__title {
     margin: 0;
   }
 }
-.about-card__sig button {
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+}
+.main-card button {
+  width: 10rem;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(256.36deg, 25.88%, 33.33%);
   padding: 0.61rem;
   border: none;
   border-radius: 7px;
   font-size: 15px;
+  margin: 2rem auto;
 }
-.about-card__sig button:hover {
-  background-color: hsl(256.36deg, 25.88%, 33.33%);
-  color: hsl(0deg, 0%, 85.1%);
-  font-weight: 900;
-  text-transform: uppercase;
+@media screen and (min-width: 1020px) {
+  .main-card button {
+    margin: 2rem;
+  }
+}
+.main-card button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(256.36deg, 25.88%, 33.33%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
 }
 
 .main-dark {
   width: 100%;
-  height: 73rem;
+  min-height: 73rem;
   display: flex;
   flex-direction: column;
   background-color: #0e0e0e;
 }
 @media screen and (min-width: 768px) {
   .main-dark {
-    height: 60rem;
+    min-height: 44rem;
   }
 }
 @media screen and (min-width: 1020px) {
@@ -361,11 +382,30 @@ body {
     flex-direction: row-reverse;
     height: 100vh;
   }
+  .main-dark::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .profile-dark {
   max-width: 100%;
   height: 50vh;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -561,16 +601,29 @@ body {
     margin: 0;
   }
 }
-.about-dark__card-sig button {
-  color: hsl(210deg, 4%, 67%);
+
+.main-dark__cardp {
+  display: flex;
+  flex-direction: column;
+}
+.main-dark__cardp button {
+  width: 10rem;
+  color: hsl(0deg, 0%, 100%);
   background-color: hsl(256.36deg, 25.88%, 33.33%);
   padding: 0.61rem;
   border: none;
   border-radius: 7px;
   font-size: 15px;
+  margin: 2rem;
+  margin: 2rem auto;
 }
-.about-dark__card-sig button:hover {
-  background-color: hsl(256.36deg, 25.88%, 33.33%);
-  color: hsl(357.84deg, 88.99%, 42.75%);
-  font-weight: 900;
+.main-dark__cardp button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(256.36deg, 25.88%, 33.33%);
+  color: hsl(256.36deg, 25.88%, 33.33%);
+}
+@media screen and (min-width: 1020px) {
+  .main-dark__cardp button {
+    margin: 2rem;
+  }
 }/*# sourceMappingURL=About.module.css.map */

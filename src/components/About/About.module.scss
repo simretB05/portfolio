@@ -180,7 +180,7 @@
 				}
 			}
 		}
-		&__sig {
+		&-sig {
 			@include flex-center;
 			flex-direction: column;
 			@include font-family-passion;
@@ -192,31 +192,40 @@
 				align-items: flex-end;
 				justify-content: space-around;
 			}
-			& p {
+			&-sig__title {
 				color: $c-deep-red;
 				font-size: 2rem;
-				margin-bottom: $m-base;
+				margin: $m-base;
 				@include laptop-query {
 					margin: 0;
-				}
-			}
-			& button {
-				color: $c-white;
-				background-color: $c-dark-green;
-				padding: 0.61rem;
-				border: none;
-				border-radius: 7px;
-				font-size: 15px;
-				&:hover {
-					background-color: $c-dark-green;
-					color: $c-bright-gray;
-					font-weight: $fw-black;
-					text-transform: uppercase;
 				}
 			}
 		}
 	}
 }
+.main-card {
+	display: flex;
+	flex-direction: column;
+	& button {
+		width: 10rem;
+		color: $c-white;
+		background-color: $c-dark-green;
+		padding: 0.61rem;
+		border: none;
+		border-radius: 7px;
+		font-size: 15px;
+		margin: $m-base * 2 auto;
+		@include laptop-query {
+			margin: $m-base * 2;
+		}
+		&:hover {
+			background-color: $c-white;
+			border: 2px solid $c-dark-green;
+			color: $c-dark-green;
+		}
+	}
+}
+
 .main-dark {
 	width: 100%;
 	min-height: 73rem;
@@ -401,19 +410,31 @@
 					margin: 0;
 				}
 			}
-			& button {
-				color: $c-grayish-blue;
-				background-color: $c-dark-green;
-				padding: 0.61rem;
-				border: none;
-				border-radius: 7px;
-				font-size: 15px;
-				&:hover {
-					background-color: $c-dark-green;
-					color: $c-deep-red;
-					font-weight: $fw-black;
-				}
-			}
+		}
+	}
+}
+
+.main-dark__cardp {
+	display: flex;
+	flex-direction: column;
+	& button {
+		width: 10rem;
+		color: $c-white;
+		background-color: $c-dark-green;
+		padding: 0.61rem;
+		border: none;
+		border-radius: 7px;
+		font-size: 15px;
+		margin: $m-base * 2;
+		margin: $m-base * 2 auto;
+
+		&:hover {
+			background-color: $c-white;
+			border: 2px solid $c-dark-green;
+			color: $c-dark-green;
+		}
+		@include laptop-query {
+			margin: $m-base * 2;
 		}
 	}
 }
